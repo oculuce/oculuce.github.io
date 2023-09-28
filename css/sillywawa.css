@@ -17,7 +17,7 @@ nav a:hover{padding:5px}
     justify-content:center;
 }
 .imagegrid img{
-    width:45%;
+    width:45%;border:2px #334b3f solid;
 }
-@media (max-width: 640px) {.imagegrid img {width:100%}}
-@media (min-width: 1024px) {.imagegrid img {width:30%}}
+@media (max-width: 640px) {.imagegrid img {width:100%;}}
+@media (min-width: 1024px) {.imagegrid img {width:30%;margin:1px;}}
