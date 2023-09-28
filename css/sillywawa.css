@@ -7,5 +7,6 @@ border:#00000055 3px solid;border-radius: 3px;}
 @media (min-width: 1536px) { article p{font-size:20px;} }
 
 nav a{background-color:#a5e9a8;padding:3px;margin:3px;
-    border:#00000055 3px solid;border-radius:3px;transition-duration:200ms;}
+    border:#00000055 3px solid;border-radius:3px;transition-duration:200ms;
+    font-size:30px;text-decoration:none;font-weight:bold;color:#225599}
 nav a:hover{padding:5px}
