@@ -1,4 +1,4 @@
-body{font-family:'Courier New', Courier, monospace;background-color:#57816c;}
+body{font-family:monospace;background-color:#57816c;}
 article{background-color:#ccecdf;padding:3px;margin-bottom:5px;
 border:#00000055 3px solid;border-radius: 3px;}
 
@@ -10,3 +10,14 @@ nav a{background-color:#a5e9a8;padding:3px;margin:3px;
     border:#00000055 3px solid;border-radius:3px;transition-duration:200ms;
     font-size:30px;text-decoration:none;font-weight:bold;color:#225599}
 nav a:hover{padding:5px}
+
+
+.imagegrid{
+    flex-wrap:wrap;
+    justify-content:center;
+}
+.imagegrid img{
+    width:45%;
+}
+@media (max-width: 640px) {.imagegrid img {width:100%}}
+@media (min-width: 1024px) {.imagegrid img {width:30%}}
