@@ -1,5 +1,5 @@
 body{font-family:monospace;background-color:#57816c;}
-article{background-color:#ccecdf;padding:3px;margin-bottom:5px;
+article{background-color:#ccecdf;padding:7px;margin-bottom:5px;
 border:#00000055 3px solid;border-radius: 3px;}
 
 @media (min-width: 640px) { article p{font-size:17px;} }
