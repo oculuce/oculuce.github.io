@@ -13,11 +13,11 @@ nav a:hover{padding:5px}
 
 
 .imagegrid{
-    flex-wrap:wrap;
-    justify-content:center;
+    display:flex;
+    flex-wrap:wrap;justify-content:space-around;
 }
 .imagegrid img{
-    width:45%;border:2px #334b3f solid;
+    width:35%;border:2px #334b3f solid;align-self:center;
 }
-@media (max-width: 640px) {.imagegrid img {width:100%;}}
+@media (max-width: 640px) {.imagegrid img {width:95%;}}
 @media (min-width: 1024px) {.imagegrid img {width:30%;margin:1px;}}
