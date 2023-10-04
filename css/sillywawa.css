@@ -12,12 +12,13 @@ nav a{background-color:#a5e9a8;padding:3px;margin:3px;
 nav a:hover{padding:5px}
 
 
+
 .imagegrid{
     display:flex;
     flex-wrap:wrap;justify-content:space-around;
 }
 .imagegrid img{
-    width:35%;border:2px #334b3f solid;align-self:center;
+    max-width:35%;border:2px #334b3f solid;align-self:center;
 }
-@media (max-width: 640px) {.imagegrid img {width:95%;}}
-@media (min-width: 1024px) {.imagegrid img {width:30%;margin:1px;}}
+@media (max-width: 640px) {.imagegrid img {max-width:95%;}}
+@media (min-width: 1024px) {.imagegrid img {max-width:30%;margin:1px;}}
