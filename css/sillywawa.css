@@ -15,11 +15,16 @@ nav a:hover{padding:5px}
 
 
 .imagegrid{
-    display:flex;
-    flex-wrap:wrap;justify-content:space-around;
+    column-count:2;
 }
 .imagegrid img{
-    max-width:35%;border:2px #334b3f solid;align-self:center;
+    max-width:100%;border:2px #334b3f solid;align-self:center;
 }
-@media (max-width: 640px) {.imagegrid img {max-width:95%;}}
-@media (min-width: 1024px) {.imagegrid img {max-width:30%;margin:1px;}}
+
+
+@media (max-width: 640px) {.imagegrid {column-count:1}} 
+@media (min-width: 1024px) {.imagegrid {column-count:3}}
+/*
+
+display:flex;
+    flex-wrap:wrap;justify-content:space-around;*/
