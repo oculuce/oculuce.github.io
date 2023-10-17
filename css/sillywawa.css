@@ -13,7 +13,7 @@ nav a{background-color:#a5e9a8;padding:3px;margin:3px;
 nav a:hover{padding:5px}
 
 .squish{transition-duration:200ms;}
-.squish:hover{margin:20px}
+.squish:hover{margin:20px;box-shadow:0px 0px 30px #ff0066 inset, 0px 10px 20px #ff0066}
 .imagegrid{
     column-count:2;
 }
