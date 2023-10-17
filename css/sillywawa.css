@@ -12,8 +12,8 @@ nav a{background-color:#a5e9a8;padding:3px;margin:3px;
     font-size:30px;text-decoration:none;font-weight:bold;color:#225599}
 nav a:hover{padding:5px}
 
-
-
+.squish{transition-duration:200ms;}
+.squish:hover{margin:20px}
 .imagegrid{
     column-count:2;
 }
