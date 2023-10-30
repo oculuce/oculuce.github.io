@@ -1,4 +1,5 @@
-body{font-family:monospace;background-color:#57816c;}
+body{font-family:monospace;background-color:#57816c;margin:0;}
+.containment{margin:8px}
 article{background-color:#ccecdf;padding:7px;margin-bottom:5px;
 border:#00000000 15px solid;border-radius:3px;
 border-image:url(../images/icons/borderwawa.png)30 round;
@@ -7,7 +8,7 @@ max-width:1500px;}
 
 
 
-
+ 
 nav a{background-color:#a5e9a8;padding:3px;margin:3px;
     border:#00000055 3px solid;border-radius:3px;transition-duration:200ms;
     font-size:30px;text-decoration:none;font-weight:bold;color:#225599}
@@ -22,6 +23,8 @@ nav a:hover{padding:5px}
     max-width:100%;border:2px #334b3f solid;align-self:center;
 }
 
+.depths{background-color:#1336243f;}
+.space{height:250px}
 
 @media (max-width: 640px) {
     .imagegrid {column-count:1} 
