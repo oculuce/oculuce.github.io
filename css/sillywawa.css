@@ -4,9 +4,8 @@ border:#00000000 15px solid;border-radius:3px;
 border-image:url(../images/icons/borderwawa.png)30 round;
 max-width:1500px;}
 
-@media (min-width: 640px) { article p{font-size:17px;} }
-@media (min-width: 1024px) { article p{font-size:18px;} }
-@media (min-width: 1536px) { article p{font-size:20px;} }
+
+
 
 
 nav a{background-color:#a5e9a8;padding:3px;margin:3px;
@@ -24,8 +23,19 @@ nav a:hover{padding:5px}
 }
 
 
-@media (max-width: 640px) {.imagegrid {column-count:1}} 
-@media (min-width: 1024px) {.imagegrid {column-count:3}}
+@media (max-width: 640px) {
+    .imagegrid {column-count:1} 
+    nav a{font-size:20px;padding:1px;}
+    nav a img{max-width:40px}
+    article p{font-size:17px;}
+}
+@media (min-width: 1024px) {
+    .imagegrid {column-count:3}
+    article p{font-size:18px;}
+}
+@media (min-width: 1536px) { 
+    article p{font-size:20px;} 
+}
 /*
 
 display:flex;
