@@ -5,6 +5,9 @@ border:#00000000 15px solid;border-radius:3px;
 border-image:url(../images/icons/borderwawa.png)30 round;
 max-width:1500px;}
 
+.slop{display:flex;justify-content:center}
+.slop img{align-self:center}
+
 
 
 
@@ -23,8 +26,9 @@ nav a:hover{padding:5px}
     max-width:100%;border:2px #334b3f solid;align-self:center;
 }
 
-.depths{background-color:#1336243f;}
+.depths{background-color:#0924163f;border-left:10px dashed #0924163f;border-right:10px dashed #0924163f}
 .space{height:250px}
+.half{width:50%}
 
 @media (max-width: 640px) {
     .imagegrid {column-count:1} 
