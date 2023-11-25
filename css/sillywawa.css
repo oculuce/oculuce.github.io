@@ -5,10 +5,13 @@ border:#00000000 15px solid;border-radius:3px;
 border-image:url(../images/icons/borderwawa.png)30 round;
 max-width:1500px;}
 
+.biobar{list-style-type: none;display:flex;gap:10px;flex-wrap:wrap;}
+.biobar li{font-size: 20px;font-weight: bold;background-color:#9ec4b4;padding:15px;border-radius:5px;
+text-decoration: none;}
+
+
 .slop{display:flex;justify-content:center}
 .slop img{align-self:center}
-
-
 
 
  
@@ -36,6 +39,11 @@ nav a:hover{padding:5px}
     nav a img{max-width:40px}
     article p{font-size:17px;}
 }
+
+
+article p{font-size:17.5px;}
+
+
 @media (min-width: 1024px) {
     .imagegrid {column-count:3}
     article p{font-size:18px;}
