@@ -5,6 +5,9 @@ border:#00000000 15px solid;border-radius:3px;
 border-image:url(../images/icons/borderwawa.png)30 round;
 max-width:1500px;}
 
+article > article{background-color:#9ec4b4;}
+
+
 .biobar{list-style-type: none;display:flex;gap:10px;flex-wrap:wrap;}
 .biobar li{font-size: 20px;font-weight: bold;background-color:#9ec4b4;padding:15px;border-radius:5px;
 text-decoration: none;}
