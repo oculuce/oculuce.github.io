@@ -1,31 +1,18 @@
+/* main structural stuff */
 body{font-family:monospace;background-color:#57816c;margin:0;}
 .containment{margin:8px}
-article{background-color:#ccecdf;padding:7px;margin-bottom:5px;
-border:#00000000 15px solid;border-radius:3px;
-border-image:url(../images/icons/borderwawa.png)30 round;
+
+article{background-color:#ccecdf;padding:3px;margin-bottom:5px;
+border:#00000000 20px solid;border-radius:3px;
+border-image:url(../images/griddy/borderwawa.png)30 round;
 max-width:1500px;}
-
 article > article{background-color:#9ec4b4;}
-
+article p{font-size:17.5px;}
 
 .biobar{list-style-type: none;display:flex;gap:10px;flex-wrap:wrap;}
 .biobar li{font-size: 20px;font-weight: bold;background-color:#9ec4b4;padding:15px;border-radius:5px;
 text-decoration: none;}
 
-
-.slop{display:flex;justify-content:center}
-.slop img{align-self:center}
-
-
- 
-nav a{background-color:#a5e9a8;padding:3px;margin:3px;
-    border:#00000055 3px solid;border-radius:3px;transition-duration:200ms;
-    font-size:30px;text-decoration:none;font-weight:bold;color:#225599}
-nav a:hover{padding:5px}
-nav a:active{background-color:#85c788;border-radius:0px;color:#57388b}
-
-.squish{transition-duration:200ms;}
-.squish:hover{margin:20px;box-shadow:0px 0px 30px #ff0066 inset, 0px 10px 20px #ff0066}
 .imagegrid{
     column-count:2;
 }
@@ -33,20 +20,41 @@ nav a:active{background-color:#85c788;border-radius:0px;color:#57388b}
     max-width:100%;border:2px #334b3f solid;align-self:center;
 }
 
+/* slightly less main structural stuff */
 .depths{background-color:#0924163f;border-left:10px dashed #0924163f;border-right:10px dashed #0924163f}
 .space{height:250px}
+
+/* more sectiony areas */
+nav a{background-color:#a5e9a8;padding:3px;margin:3px;
+    border:#00000055 3px solid;border-radius:3px;transition-duration:200ms;
+    font-size:30px;text-decoration:none;font-weight:bold;color:#225599}
+nav a:hover{padding:5px}
+nav a:active{background-color:#85c788;border-radius:0px;color:#57388b}
+
+/* slop is faster to type than flex-container. */
+.slop{display:flex;justify-content:center}
+.slop img{align-self:center}
+
+.slime{display: flex;}
+
+/* the silly */
+.squish{transition-duration:200ms;}
+.squish:hover{margin:20px;box-shadow:0px 0px 30px #ff0066 inset, 0px 10px 20px #ff0066}
+
+/* unused */
 .half{width:50%}
+.floatelle{float: left;}
+.floatwrite{float: right;}
+
+/* all size-dependent stuff. */
 
 @media (max-width: 640px) {
     .imagegrid {column-count:1} 
     nav a{font-size:20px;padding:1px;}
     nav a img{max-width:40px}
     article p{font-size:17px;}
+    .slime{display: inherit;}
 }
-
-
-article p{font-size:17.5px;}
-
 
 @media (min-width: 1024px) {
     .imagegrid {column-count:3}
