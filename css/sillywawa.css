@@ -35,7 +35,8 @@ nav a:active{background-color:#85c788;border-radius:0px;color:#57388b}
 .slop{display:flex;justify-content:center}
 .slop img{align-self:center}
 
-.slime{display: flex;}
+.slime{display: flex; gap: 20px;}
+.wrap{flex-wrap: wrap;}
 
 /* the silly */
 .squish{transition-duration:200ms;}
