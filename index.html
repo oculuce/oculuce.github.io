@@ -44,7 +44,11 @@
             Click me to do something.</button>
             <form action=""><label>blehh</label><input type="checkbox" id="appear" onclick="onAndOff()"></form>
             <article id="target">blabla</article>
-
+            <form action=""><label>blablabla</label><input type="checkbox" id="idkKirby" onclick="breakTargets()"></form>
+            <div class="hitTheTargets">lala</div>
+            <div class="hitTheTargets">lala</div>
+            <div class="hitTheTargets">lala</div>
+            <div class="hitTheTargets">lala</div>
         </article>
 
         <script>
@@ -58,8 +62,21 @@
             function onAndOff(){
                 if (document.getElementById('appear').checked)
                 {document.getElementById('target').classList = "hide";}
-                else {document.getElementById('target').classList = "";}
+                else {document.getElementById('target').classList = "lala";}
             }
+            function blaw(){}
+            function blaj(){}
+
+            function breakTargets(){
+                if (document.getElementById('idkKirby').checked)
+                {const Help = document.getElementsByClassName('hitTheTargets');
+                for (let i = 0; i < Help.length; i++) {
+                    Help[i].classList = 'hitTheTargets hide';}}
+                else {const Help = document.getElementsByClassName('hitTheTargets');
+                for (let i = 0; i < Help.length; i++) {
+                    Help[i].classList = 'hitTheTargets';}}
+            }
+
         </script>
         <article>
             <h1>Hello!</h1>
