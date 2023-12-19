@@ -21,16 +21,46 @@
         </nav>
         <!--copy from <body> to here-->
         <main>
-        <article>
+        <article id="blehh">
             <img src="https://cyb3rstuff.neocities.org/underconstruction.gif" alt="gif of the word UNDER CONSTRUCTION tumbling towards you">
             <h1>TO DO:</h1>
             <ul>
                 <li>character icons.</li>
                 <li>alt tag everything</li>
                 <li>compile olderest art. physical art too.</li>
-                <li>learn js. specifically altering the class of a thingy.</li>
+                <li id="gregtech">learn js. specifically altering the class of a thingy.</li>
             </ul>
+
+            <button type="button"
+            onclick="document.getElementById('gregtech').innerHTML = Date() + '<button ><h2>this does nothing.</h2></button>'">
+            Click me to display Date and Time.</button>
+            <button type="button"
+            onclick="alert(9 + 10)">
+            Click me to show a number.</button>
+            <button onclick="removeThing()">Click me to remove this thing.</button>
+            <br>Yeah im just gonna have this sitting here. 
+            <button type="button"
+            onclick="poke()">
+            Click me to do something.</button>
+            <form action=""><label>blehh</label><input type="checkbox" id="appear" onclick="onAndOff()"></form>
+            <article id="target">blabla</article>
+
         </article>
+
+        <script>
+            function removeThing(){
+                document.getElementById('blehh').classList = "hide"
+            }
+            function poke(){
+                var check = document.getElementById('appear');
+                check.checked = true;
+            }
+            function onAndOff(){
+                if (document.getElementById('appear').checked)
+                {document.getElementById('target').classList = "hide";}
+                else {document.getElementById('target').classList = "";}
+            }
+        </script>
         <article>
             <h1>Hello!</h1>
             <p>This website has everything I'm fine with complete strangers knowing, instead of it
