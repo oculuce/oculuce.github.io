@@ -6,7 +6,7 @@
     <title>my various Guys</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='css/sillywawa.css'>
-    <script src='main.js'></script>
+    <script src='js/infoDump.js'></script>
     <link rel="icon" type="image/x-icon" href="images/icons/scicon.png">
 </head>
 <body background="images/griddy/greenyEyes.png"><div class="containment">
@@ -31,10 +31,26 @@
         <div class="biobar"><li>Sky Islands</li></div>
         <p>silly islands that float above the fog</p>
     </article>
-    <article>
+    <article class="vermilliwrong">
         <img src="images/sluggy.png">
-        <div class="biobar"><li>Acaud</li> <li>She/Any</li> <li>Blood Fiend</li> <li>Budding Blacksmith</li></div>
-        <p>A hive of blood fiends who are just really into blacksmithing. Her obsession began when
+        <div class="biobar"><li>Blood Fiends</li></div>
+        <article>
+            <p>Slightly acidic and mildly impish, these creatures are a relatively common sight in the sky islands.
+                Individual fiends are just barely less than sapient and rather clumsy, while 'hives' of blood fiends are mostly-fully
+                functional people you can hold a conversation with.</p>
+            <div id="acaudLight" style="display:none;">
+                <p>The three main parts of a blood fiend are its eye, its 'blood' (slightly acidic, hot
+                    enough to burn you), and its highly insulative membrane.</p>
+                <p>blabla</p>
+            </div>
+            <button id="acaudSwitch" onclick="acaudInfo()">more red, please</button>
+        </article>
+    </article>
+    <article class="vermilliwrong">
+        <img src="images/sluggy.png">
+        <div class="biobar"><li>Acaud</li> <li>She/They</li> <li>Blood Fiend</li> <li>Budding Blacksmith</li></div>
+        <p>A hive of blood fiends who are just really into blacksmithing. Her interest was 
+            ignited when they found a nearly pristine anvil in the middle of nowhere. Yay.
         </p>
     </article>
 </div>

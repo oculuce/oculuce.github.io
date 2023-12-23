@@ -6,7 +6,7 @@
     <title>my various Guys</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='css/sillywawa.css'>
-    <script src='main.js'></script>
+    <script src='js/infoDump.js'></script>
     <link rel="icon" type="image/x-icon" href="images/icons/scicon.png">
 </head>
 <body background="images/griddy/greenyTile.png"><div class="containment">
@@ -36,11 +36,15 @@
     <article>
         <img src="images/sluggy.png">
         <div class="biobar"><li>Mechae</li></div>
-        <p>Predominantly found near their floor-to-ceiling spires, though you may spot them travelling via. vehicle.
-            Home-bound workers have easy access to charge stations, while those needing to do extended remote work must
-            install portable generators inside themselves, either powered by concentrated <strong>juice</strong> or organic matter.
-            <br>Bodies are mostly modular, with some cobbling together their own specialized body parts
+        <p>Mechanical humanoids capable of a great many things, depending on what body parts they're wearing when you ask them to do something.
+        Mechae are most commonly seen near the cities and outposts they build for themselves, though it isn't uncommon to see one out in the wilderness or within other civilizations.
         </p>
+        <div id="mechaeLight" style="display:none;">
+            <p>Home-bound workers have easy access to charge stations, while those needing to do extended remote work must
+                install portable generators inside themselves, either powered by concentrated <strong>juice</strong> or organic matter.
+                <br>Bodies are mostly modular, with some cobbling together their own specialized body parts</p>
+        </div>
+        <button id="mechaeSwitch" onclick="mechaeInfo()">more on metal?</button>
     </article>
     <article>
         <img src="images/sluggy.png">

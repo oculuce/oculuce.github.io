@@ -6,7 +6,7 @@
     <title>Main Page</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='css/sillywawa.css'>
-    <script src='main.js'></script> 
+    <script src='js/konkcreat.js'></script> 
     <link rel="icon" type="image/x-icon" href="images/icons/faceglue.png">
     <style>/*article{border-image:url(../images/icons/borderwawa.png)30 round;}*/</style>
 </head>
@@ -23,60 +23,38 @@
         <main>
         <article id="blehh">
             <img src="https://cyb3rstuff.neocities.org/underconstruction.gif" alt="gif of the word UNDER CONSTRUCTION tumbling towards you">
-            <h1>TO DO:</h1>
-            <ul>
-                <li>character icons.</li>
-                <li>alt tag everything</li>
-                <li>compile olderest art. physical art too.</li>
-                <li id="gregtech">learn js. specifically altering the class of a thingy.</li>
-            </ul>
-
-            <button type="button"
-            onclick="document.getElementById('gregtech').innerHTML = Date() + '<button ><h2>this does nothing.</h2></button>'">
-            Click me to display Date and Time.</button>
-            <button type="button"
-            onclick="alert(9 + 10)">
-            Click me to show a number.</button>
-            <button onclick="removeThing()">Click me to remove this thing.</button>
-            <br>Yeah im just gonna have this sitting here. 
-            <button type="button"
-            onclick="poke()">
-            Click me to do something.</button>
-            <form action=""><label>blehh</label><input type="checkbox" id="appear" onclick="onAndOff()"></form>
-            <article id="target">blabla</article>
-            <form action=""><label>blablabla</label><input type="checkbox" id="idkKirby" onclick="breakTargets()"></form>
-            <div class="hitTheTargets">lala</div>
-            <div class="hitTheTargets">lala</div>
-            <div class="hitTheTargets">lala</div>
-            <div class="hitTheTargets">lala</div>
+            <br><button id="sayMore" onclick="nowJustGetRidOfIt()">blabla</button>
+            <div id="sayLess" style="display:none;">
+                <h1>TO DO:</h1>
+                <ul>
+                    <li>character icons.</li>
+                    <li>alt tag everything</li>
+                    <li>compile olderest art. physical art too.</li>
+                    <li id="gregtech">learn js. specifically altering the class of a thingy.</li>
+                </ul>
+                <button type="button"
+                onclick="document.getElementById('gregtech').innerHTML = Date() + '<button ><h2>this does nothing.</h2></button>'">
+                Click me to display Date and Time.</button>
+                <button type="button"
+                onclick="alert(9 + 10)">
+                Click me to show a number.</button>
+                <button onclick="removeThing()">Click me to remove this thing.</button>
+                <br>Yeah im just gonna have this sitting here.
+                <button type="button"
+                onclick="poke()">
+                Click me to do something.</button>
+                <form action=""><label>blehh</label><input type="checkbox" id="appear" onclick="onAndOff()"></form>
+                <article id="target">blabla</article>
+                <form action=""><label>blablabla</label><input type="checkbox" id="idkKirby" onclick="breakTargets()"></form>
+                <div class="hitTheTargets">lala</div>
+                <div class="hitTheTargets">lala</div>
+                <div class="hitTheTargets">lala</div>
+                <div class="hitTheTargets">lala</div>
+            </div>
         </article>
 
         <script>
-            function removeThing(){
-                document.getElementById('blehh').classList = "hide"
-            }
-            function poke(){
-                var check = document.getElementById('appear');
-                check.checked = true;
-            }
-            function onAndOff(){
-                if (document.getElementById('appear').checked)
-                {document.getElementById('target').classList = "hide";}
-                else {document.getElementById('target').classList = "lala";}
-            }
-            function blaw(){}
-            function blaj(){}
-
-            function breakTargets(){
-                if (document.getElementById('idkKirby').checked)
-                {const Help = document.getElementsByClassName('hitTheTargets');
-                for (let i = 0; i < Help.length; i++) {
-                    Help[i].classList = 'hitTheTargets hide';}}
-                else {const Help = document.getElementsByClassName('hitTheTargets');
-                for (let i = 0; i < Help.length; i++) {
-                    Help[i].classList = 'hitTheTargets';}}
-            }
-
+            
         </script>
         <article>
             <h1>Hello!</h1>
@@ -112,6 +90,7 @@
         </div>
         <article class="blog">
             <h1>blog/updatething</h1>
+            <article><h2>Dec 23, 2023</h2><p>learned enough js for my purposes. need to find and re-remember lore on my characters to justify having a 'read more' on them.</p></article>
             <article><h2>Dec 7, 2023</h2><p>okay maybe I don't make an update for every time I add art</p></article>
             <article><h2>Nov 28, 2023</h2><p>added in doodleboards. Yay. This is like most of my digital art.</p></article>
             <article><h2>Sept 14, 2023</h2><p>sluggy.png added. the website too.</p></article>
