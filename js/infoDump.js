@@ -30,3 +30,18 @@ function mechaeInfo(){
         theSwitch.innerHTML = "read again?";
     }
 }
+
+
+
+function sc4vInfo(){
+    var theSwitch = document.getElementById('sc4vSwitch');
+    var theLight = document.getElementById('sc4vLight');
+
+    if (theLight.style.display === "none"){
+        theLight.style.display = 'inline';
+        theSwitch.innerHTML = "less, please";
+    }else{
+        theLight.style.display = 'none';
+        theSwitch.innerHTML = "read it again?";
+    }
+}

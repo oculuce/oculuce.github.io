@@ -7,10 +7,12 @@ border:#00000000 20px solid;border-radius:3px;
 border-image:url(../images/griddy/borderwawa.png)30 round;
 max-width:1500px;}
 
-        /* colour schema */
+        /* colour schemes */
         .vermilliwrong{background-color: #ecccd8;border-image: none;} /*none for now!*/
         .vermilliwrong > article{background-color: #c49eaf;border-image: none;}
         .vermilliwrong > .biobar li{background-color: #401631;color: #fff;}
+
+        
 
 
 article > article{background-color:#9ec4b4;}
@@ -23,6 +25,7 @@ button:active{color:#a0c3be;border-color: #093725 #33b080 #33b080 #093725 ;}
 .biobar{list-style-type: none;display:flex;gap:10px;flex-wrap:wrap;}
 .biobar li{font-size: 20px;font-weight: bold;background-color:#9ec4b4;padding:15px;border-radius:5px;
 text-decoration: none;}
+.biobar img{width: 64px;}
 
 .imagegrid{
     column-count:2;
