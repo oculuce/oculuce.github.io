@@ -31,7 +31,8 @@ text-decoration: none;}
     column-count:2;
 }
 .imagegrid img{
-    max-width:100%;border:2px #334b3f solid;align-self:center;
+    width:100%;border:2px #334b3f solid;align-self:center;
+    background-color:#444444;
 }
 
 /* slightly less main structural stuff */
