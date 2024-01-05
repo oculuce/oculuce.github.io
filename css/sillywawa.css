@@ -11,8 +11,12 @@ max-width:1500px;}
         .vermilliwrong{background-color: #ecccd8;border-image: none;} /*none for now!*/
         .vermilliwrong > article{background-color: #c49eaf;border-image: none;}
         .vermilliwrong > .biobar li{background-color: #401631;color: #fff;}
-
-        
+        .caramalt{background-color: #ecd4cc;border-image: none;} /*none for now!*/
+        .caramalt > article{background-color: #dab1a3;border-image: none;}
+        .caramalt > .biobar li{background-color: #bfa294;}
+        .blueberrish{background-color: #ccd2ec;border-image: none;} /*none for now!*/
+        .blueberrish > article{background-color: #8e9bd6;border-image: none;}
+        .blueberrish > .biobar li{background-color: #2e0b5d;color: #fff;}
 
 
 article > article{background-color:#9ec4b4;}
