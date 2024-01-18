@@ -20,43 +20,47 @@ max-width:1500px;}
 
 
 article > article{background-color:#9ec4b4;}
-article p{font-size:17.5px;}
+/*SD*/article p{font-size:17.5px;}
 
 button{font-size: 16.5px;background-color: #136546;color:#d8f4e9;padding:4px;
-    border-color: #33b080 #093725 #093725 #33b080;}
+    border-color: #33b080 #093725 #093725 #33b080;cursor: pointer;}
 button:active{color:#a0c3be;border-color: #093725 #33b080 #33b080 #093725 ;}
 
-.biobar{list-style-type: none;display:flex;gap:10px;flex-wrap:wrap;}
+.biobar{list-style-type: none;display:flex;gap:10px;flex-wrap:wrap;align-items: flex-end;}
 .biobar li{font-size: 20px;font-weight: bold;background-color:#9ec4b4;padding:15px;border-radius:5px;
 text-decoration: none;}
-.biobar img{width: 64px;}
+.biobar img{width: 64px;height: auto;}
 
 .imagegrid{
     column-count:2;
 }
 .imagegrid img{
-    width:100%;border:2px #334b3f solid;align-self:center;
+    width:100%;height: auto;border:2px #334b3f solid;align-self:center;
     background-color:#444444;
 }
 
 /* slightly less main structural stuff */
 .depths{background-color:#0924163f;border-left:10px dashed #0924163f;border-right:10px dashed #0924163f}
 .space{height:250px}
-
+/*SD*/.doubleup{display: flex;gap: 1%;justify-content: flex-start;align-items: flex-start;}
+.doubleup nav{min-width:360px;}
 
 /* more sectiony areas */
-nav a{background-color:#a5e9a8;padding:3px;margin:3px;
-    border:#00000055 3px solid;border-radius:3px;transition-duration:200ms;
+header nav{display: flex;}
+/*SD*/nav a{background-color:#a5e9a8;padding:3px;margin:3px;
+    border:#00000055 3px solid;border-radius:4px;transition-duration:200ms;
     font-size:30px;text-decoration:none;font-weight:bold;color:#225599}
 nav a:hover{padding:5px}
 nav a:active{background-color:#85c788;border-radius:0px;color:#57388b}
+
 
 /* slop is faster to type than flex-container. */
 .slop{display:flex;justify-content:center}
 .slop img{align-self:center}
 
-.slime{display: flex; gap: 20px;}
+/*SD*/.slime{display: flex; gap: 20px;justify-content: space-between;}
 .wrap{flex-wrap: wrap;}
+
 
 /* the silly */
 .squish{transition-duration:200ms;}
@@ -70,6 +74,7 @@ nav a:active{background-color:#85c788;border-radius:0px;color:#57388b}
 
 
 /* all size-dependent stuff. */
+/*SD*/
 
 @media (max-width: 640px) {
     .imagegrid {column-count:1} 
@@ -77,6 +82,7 @@ nav a:active{background-color:#85c788;border-radius:0px;color:#57388b}
     nav a img{max-width:40px}
     article p{font-size:17px;}
     .slime{display: inherit;}
+    .doubleup{display: inherit;}
 }
 
 @media (min-width: 1024px) {
