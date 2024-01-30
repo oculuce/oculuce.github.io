@@ -4,14 +4,14 @@
 
 
 function acaudInfo(){
-    var theSwitch = document.getElementById('acaudSwitch');
-    var theLight = document.getElementById('acaudLight');
+    var theSwitch = document.querySelector('#acaudSwitch'); //ok these are like
+    var theLight = document.getElementById('acaudLight');   //exactly the same
 
-    if (theLight.style.display === "none"){
-        theLight.style.display = 'inline';
+    if (theLight.classList.contains('hide') ){
+        theLight.classList.remove('hide');
         theSwitch.innerHTML = "too much red.";
     }else{
-        theLight.style.display = 'none';
+        theLight.classList.add('hide');
         theSwitch.innerHTML = "can you say that again?";
     }
 }
@@ -22,11 +22,11 @@ function mechaeInfo(){
     var theSwitch = document.getElementById('mechaeSwitch');
     var theLight = document.getElementById('mechaeLight');
 
-    if (theLight.style.display === "none"){
-        theLight.style.display = 'inline';
+    if (theLight.classList.contains('hide')){
+        theLight.classList.remove('hide');
         theSwitch.innerHTML = "seen enough?";
     }else{
-        theLight.style.display = 'none';
+        theLight.classList.add('hide');
         theSwitch.innerHTML = "read again?";
     }
 }
@@ -37,11 +37,11 @@ function sc4vInfo(){
     var theSwitch = document.getElementById('sc4vSwitch');
     var theLight = document.getElementById('sc4vLight');
 
-    if (theLight.style.display === "none"){
-        theLight.style.display = 'inline';
+    if (theLight.classList.contains('hide')){
+        theLight.classList.remove('hide');
         theSwitch.innerHTML = "less, please";
     }else{
-        theLight.style.display = 'none';
+        theLight.classList.add('hide');
         theSwitch.innerHTML = "read it again?";
     }
 }
