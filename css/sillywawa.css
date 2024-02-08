@@ -36,7 +36,7 @@ text-decoration: none;}
 }
 .imagegrid img{
     width:100%;height: auto;border:2px #334b3f solid;align-self:center;
-    background-color:#444444;
+    background-color:#444444;image-rendering: pixelated;
 }
 
 /* slightly less main structural stuff */

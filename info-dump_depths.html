@@ -5,7 +5,7 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>my various Guys</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='css/sillywawa.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/tealywawa.css'>
     <script src='js/infoDump.js'></script>
     <link rel="icon" type="image/x-icon" href="images/icons/scicon.png">
 </head>
@@ -13,122 +13,123 @@
     
         <header>
             <nav>
+                <img src="images/sluggy.png">
                 <a href="index.html">main</a>
                 <a href="about-me.html">who</a>
                 <a href="interest-dump.html">interests</a>
                 <a href="my-images.html">art</a>
                 <a href="info-dump.html">characters</a>
             </nav>
+            <nav>
+                <a href="info-dump_sky-islands.html"><img src="images/icons/isle.png"><br>sky islands</a><br>
+                <a href="info-dump_surface.html"><img src="images/icons/surface.png"><br>surface</a><br>
+                <a href="#"><img src="images/icons/underground.png"><br>depths (here)</a><br>
+                <a href="info-dump.html"><img src="images/icons/misc.png"><br>elsewhere</a><br>
+            </nav>
         </header>
         <!--copy from <body> to here-->
-    <div class="doubleup">
+    <main>
+        
+            <article>
+                <div class="biobar"><li>Depths</li></div>
+                <p>a second surface beneath the first. host to a lot of weird critters.
+                    the cave ceiling provides a shield against the roiling fog above, but enough gets through for crystals to form every now and again.
+                </p>
+            </article>
+        
         <article>
-            <nav class="">
-                <a href="info-dump_sky-islands.html"><img src="images/icons/isle.png">sky islands</a><br>
-                <a href="info-dump_surface.html"><img src="images/icons/surface.png">surface</a><br>
-                <a href="#"><img src="images/icons/underground.png">depths (here)</a><br>
-                <a href="info-dump.html"><img src="images/icons/misc.png">elsewhere</a><br>
-            </nav>
+        
+            <div class="biobar"><img src="images/sluggy.png"><li>Mechae</li></div>
+            <p>Mechanical humanoids capable of a great many things, depending on what body parts they're wearing.
+            Mechae are most commonly seen near the towns and outposts they carve out for themselves, though it isn't uncommon to see one out in the wilderness or within other civilizations.
+        
+            </p>
+            <div id="mechaeLight" class="hide">
+                <p>Home-bound workers have easy access to charge stations, while those needing to do extended remote work must
+                    install portable generators inside themselves, either powered by concentrated <strong>Juice</strong> or organic matter.
+                    <br>Bodies are mostly modular, with some cobbling together their own specialized body parts</p>
+                    <p>Mechae are formed when the proper components are within a Juice-saturated environment, spontaneously forming a conscious AI core.
+                        Most quickly die when the surrounding soul energy flows elsewhere, but rarely,
+                        one of these cores will be formed pre-attached to functional limbs, allowing it to cobble together a body capable of functioning without being immersed in a Juice-rich environment.
+                        <br>Most mechae, however, are created when a full body with the parts needed to form a core are placed in the appropriate environment, waking up with everything they need to
+                        function normally. This is usually done by other mechae who are in need of extra bodies, and can't be bothered with finding someone to hire.
+                    </p>
+                    <p>Due to cores being formed from soul, each one comes with its own blend of mannerisms, affected by the experiences of whoever was within the Juice that awakened them.</p>
+            </div>
+            <button id="mechaeSwitch" onclick="mechaeInfo()">more on metal?</button>
+        </article>
+        <article class="caramalt">
+        
+            <div class="biobar"><img src="images/icons/cordysectsSmall.png"><li>Cordysects</li></div>
+            <p>A group of bugs who've introduced a funny fungus into themselves. They're not dead- some people claim they're more alive than anyone else-
+                but their jerky movement and the occasional rotting bodypart gives those unused to them some pause.
+                <br>They're generally friendly to strangers, though the reputations of outsiders spread quickly between their colonies.
+                <p>Cordysects aren't too durable, but are capable of quickly recovering from injuries that would be fatal without their fungal attributes.
+                    Injuries still wear down on them over time, and routine mendings will eventually lead them to become more fungus than bug.
+                    Overgrown cordysects aren't terribly mobile, but are more adept at managing fungal connections.
+        
+                </p>
+            </p>
         </article>
         <article>
-            <div class="biobar"><li>Depths</li></div>
-            <p>a second surface beneath the first. host to bots and bugs alike. 
-                the cave ceiling provides a shield against the roiling fog above, but enough gets through for crystals to form.
+        
+            <div class="biobar"><img src="images/icons/sc-4vSmall.png"><li>SC-4V</li> <li>They/Them</li> <li>Droid</li> <li>Skittish Survivor <sub>previously: site surveyor</sub></li></div>
+            <p>This is what you get if you give a so so scared prey animal a big metal arm to punch things with.</p>
+            <div id="sc4vLight" class="hide">
+                <p>They hate it here. Only alive because they accidentally flipped out of a minecart and got knocked out in the middle of nowhere before his co-workers started vanishing.
+                    Still alive because one of their hobbies was preparing for horrific apocalypse scenarios. They were expecting like, maybe a biblical amount of locusts or a reactor meltdown though.
+                    </p>
+                <p>Wears a big cloak and sticks with cycloptic heads due to their durability.</p>
+                <p>Quite adept at swapping out their own parts due to their previous job requiring them to survey varying perilous environments.
+                    <br>They should be allowed to make and weld a jaw to their head to bite people with. Teeth locally sourced from local wildlife, of course.
+                </p>
+            </div>
+            <button id="sc4vSwitch" onclick="sc4vInfo()">more info</button>
+        
+        </article>
+        <article class="caramalt">
+        
+            <div class="biobar"><img src="images/sluggy.png"><li>Zvezter</sub></li><li>She/he</li><li>Cordysect Wasp</li><li>Exanimate Excavator</li></div>
+            <p>Recent cordysect convert, intent on testing the limits of her body.</p>
+            <p>Follows SC-4V because they seem really intent on being really really loud and drawing attention from the local wildlife,
+            providing Zvezter an opportunity to see how his pickaxe works on something other than rocks.
             </p>
         </article>
-    </div>
-    <article>
+        <article>
         
-        <div class="biobar"><img src="images/sluggy.png"><li>Mechae</li></div>
-        <p>Mechanical humanoids capable of a great many things, depending on what body parts they're wearing.
-        Mechae are most commonly seen near the towns and outposts they carve out for themselves, though it isn't uncommon to see one out in the wilderness or within other civilizations.
-        
-        </p>
-        <div id="mechaeLight" class="hide">
-            <p>Home-bound workers have easy access to charge stations, while those needing to do extended remote work must
-                install portable generators inside themselves, either powered by concentrated <strong>Juice</strong> or organic matter.
-                <br>Bodies are mostly modular, with some cobbling together their own specialized body parts</p>
-                <p>Mechae are formed when the proper components are within a Juice-saturated environment, spontaneously forming a conscious AI core. 
-                    Most quickly die when the surrounding soul energy flows elsewhere, but rarely, 
-                    one of these cores will be formed pre-attached to functional limbs, allowing it to cobble together a body capable of functioning without being immersed in a Juice-rich environment.
-                    <br>Most mechae, however, are created when a full body with the parts needed to form a core are placed in the appropriate environment, waking up with everything they need to
-                    function normally. This is usually done by other mechae who are in need of extra bodies, and can't be bothered with finding someone to hire.
-                </p>
-                <p>Due to cores being formed from soul, each one comes with its own blend of mannerisms, affected by the experiences of whoever was within the Juice that awakened them.</p>
-        </div>
-        <button id="mechaeSwitch" onclick="mechaeInfo()">more on metal?</button>
-    </article>
-    <article class="caramalt">
-        
-        <div class="biobar"><img src="images/icons/cordysectsSmall.png"><li>Cordysects</li></div>
-        <p>A group of bugs who've introduced a funny fungus into themselves. They're not dead- some people claim they're more alive than anyone else-
-            but their jerky movement and the occasional rotting bodypart gives those unused to them some pause.
-            <br>They're generally friendly to strangers, though the reputations of outsiders spread quickly between their colonies.
-            <p>Cordysects aren't too durable, but are capable of quickly recovering from injuries that would be fatal without their fungal attributes.
-                Injuries still wear down on them over time, and routine mendings will eventually lead them to become more fungus than bug.
-                Overgrown cordysects aren't terribly mobile, but are more adept at managing fungal connections.
-                
+            <div class="biobar"><img src="images/icons/iedaSmall.png"><li>Ieda</li> <li>She/Them</li> <li>Droid</li> <li>Enthusiastic Executioner</li></div>
+            <p>Common activities include immediately attacking anything that might be hostile to her, relishing in the consequences of her actions, and running from the consequences of her actions.
+                Generally a menace, but appreciated in cordysectic colonies for the large corpses she drags in. She can siphon the volatile fuel from her internal reserves to make their IEDs.
             </p>
-        </p>
-    </article>
-    <article>
         
-        <div class="biobar"><img src="images/icons/sc-4vSmall.png"><li>SC-4V</li> <li>They/Them</li> <li>Droid</li> <li>Skittish Survivor <sub>previously: site surveyor</sub></li></div>
-        <p>This is what you get if you give a so so scared prey animal a big metal arm to punch things with.</p>
-        <div id="sc4vLight" class="hide">
-            <p>They hate it here. Only alive because they accidentally flipped out of a minecart and got knocked out in the middle of nowhere before his co-workers started vanishing.
-                Still alive because one of their hobbies was preparing for horrific apocalypse scenarios. They were expecting like, maybe a biblical amount of locusts or a reactor meltdown though.
-                </p>
-            <p>Wears a big cloak and sticks with cycloptic heads due to their durability.</p>
-            <p>Quite adept at swapping out their own parts due to their previous job requiring them to survey varying perilous environments.
-                <br>They should be allowed to make and weld a jaw to their head to bite people with. Teeth locally sourced from local wildlife, of course.
+            <div class="biobar"><img src="images/icons/avoSmall.png"><li>Avo</li> <li>They/Her</li> <li>Blood Fiend <sub>(just the one)</sub></li> <li>Confused Critter</li></div>
+            <p>A little droplet a long way from home. Followed Ieda after being found slinking around a remote juice refinement facility. It doesn't know much about things like "pronouns" or "dangerous machinery", so she just follows whatever Ieda does.
+                Capable of growing extra 'limbs' for use in grappling or grabbing things, though she needs to cool down after any particularly demanding stunts. The caustic acid they produce is used by Ieda for her IEDs.
             </p>
-        </div>
-        <button id="sc4vSwitch" onclick="sc4vInfo()">more info</button>
+        </article>
+        <!-- <article>
+            <div class="biobar"><li>DO-NOT-COME-HERE-THERE-IS-NOTHING-GOING-ON-THANK-YOU <sub>previously: You-Live-Here-Unless-You-Don't-4-B</sub></li></div>
+            <p>A completely normal city ran by a really really good overseer that only wants the best for the
+                people that live here. This involves things like not silently kidnapping mechae in order to repurpose their parts into husks that are suitable for a sentient virus to inhabit.
+            </p>
+        </article> -->
+        <article>
         
-    </article>
-    <article class="caramalt">
+            <div class="biobar"><img src="images/icons/godSmall.png"><li>Eddi</li><li>None</li><li>Virtual AI</li><li>bleh</li></div>
+            <p>Research AI intent on discovering a new way to create sapient intelligence without the use of Juice, volatile and random as it is.
+                Lack of resources has created a need to gather more resources, leading to failed attempts being repurposed. recent conflict with other
+                mechae and insectoids has caused Eddi to pivot towards 'self-defense', though recent attempts have been functional enough to produce
+                intelligence that know what is an enemy and what isn't an enemy.
+            </p>
+        </article>
+        <article>
         
-        <div class="biobar"><img src="images/sluggy.png"><li>Zvezter</sub></li><li>She/he</li><li>Cordysect Wasp</li><li>Exanimate Excavator</li></div>
-        <p>Recent cordysect convert, intent on testing the limits of her body.</p>
-        <p>Follows SC-4V because they seem really intent on being really really loud and drawing attention from the local wildlife, 
-        providing Zvezter an opportunity to see how his pickaxe works on something other than rocks.
-        </p>
-    </article>
-    <article>
-        
-        <div class="biobar"><img src="images/icons/iedaSmall.png"><li>Ieda</li> <li>She/Them</li> <li>Droid</li> <li>Enthusiastic Executioner</li></div>
-        <p>Common activities include immediately attacking anything that might be hostile to her, relishing in the consequences of her actions, and running from the consequences of her actions.
-            Generally a menace, but appreciated in cordysectic colonies for the large corpses she drags in. She can siphon the volatile fuel from her internal reserves to make their IEDs.
-        </p>
-        
-        <div class="biobar"><img src="images/icons/avoSmall.png"><li>Avo</li> <li>They/Her</li> <li>Blood Fiend <sub>(just the one)</sub></li> <li>Confused Critter</li></div>
-        <p>A little droplet a long way from home. Followed Ieda after being found slinking around a remote juice refinement facility. It doesn't know much about things like "pronouns" or "dangerous machinery", so she just follows whatever Ieda does.
-            Capable of growing extra 'limbs' for use in grappling or grabbing things, though she needs to cool down after any particularly demanding stunts. The caustic acid they produce is used by Ieda for her IEDs.
-        </p>
-    </article>
-    <!-- <article>
-        <div class="biobar"><li>DO-NOT-COME-HERE-THERE-IS-NOTHING-GOING-ON-THANK-YOU <sub>previously: You-Live-Here-Unless-You-Don't-4-B</sub></li></div>
-        <p>A completely normal city ran by a really really good overseer that only wants the best for the
-            people that live here. This involves things like not silently kidnapping mechae in order to repurpose their parts into husks that are suitable for a sentient virus to inhabit.
-        </p>
-    </article> -->
-    <article>
-        
-        <div class="biobar"><img src="images/icons/godSmall.png"><li>Eddi</li><li>None</li><li>Virtual AI</li><li>bleh</li></div>
-        <p>Research AI intent on discovering a new way to create sapient intelligence without the use of Juice, volatile and random as it is.
-            Lack of resources has created a need to gather more resources, leading to failed attempts being repurposed. recent conflict with other
-            mechae and insectoids has caused Eddi to pivot towards 'self-defense', though recent attempts have been functional enough to produce
-            intelligence that know what is an enemy and what isn't an enemy.
-        </p>
-    </article>
-    <article>
-        
-        <div class="biobar"><img src="images/icons/sauceSmall.png"><li>coolsaucerecipe.mp4</li><li>All/None</li><li>Virus</li><li>Possessive Plague</li></div>
-        <p>Sapient virus given an opportunity to replicate itself across thousands of bodies. They don't really care what Eddi tells it to do, they just like being able to see through thousands of eyes. 
-        Due to effectively being the same person, host-robots are more predictable than Eddi's other experiments. This makes them decent for resource-harvesting and security, though easy to trick.
-        </p>
-    </article>
+            <div class="biobar"><img src="images/icons/sauceSmall.png"><li>coolsaucerecipe.mp4</li><li>All/None</li><li>Virus</li><li>Possessive Plague</li></div>
+            <p>Sapient virus given an opportunity to replicate itself across thousands of bodies. They don't really care what Eddi tells it to do, they just like being able to see through thousands of eyes.
+            Due to effectively being the same person, host-robots are more predictable than Eddi's other experiments. This makes them decent for resource-harvesting and security, though easy to trick.
+            </p>
+        </article>
+    </main>
 </div>
 
 </body>
