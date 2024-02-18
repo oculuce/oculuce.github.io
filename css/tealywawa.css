@@ -1,6 +1,6 @@
 /* solid */
 body{font-family:monospace;background-color:#05222d;margin:0;}
-.containment{margin: 0 auto; background: rgb(16,103,93);
+.containment{margin: 0 auto;background-color:rgb(16,103,93); background: rgb(16,103,93);
     background: linear-gradient(180deg, rgba(16,103,93,1) 50%, #05222d00 90%); 
     padding: 5px;margin:0 auto;max-width: 1280px;padding-top: 1rem;}
 main{flex-wrap: wrap;gap: 10px 10px;background-color: #187b6f;padding:5px;
@@ -44,9 +44,11 @@ a:hover{transform: scale(1.05) perspective(1px);}
 a:active{transform: scale(0.95) perspective(1px);
     color:#4605a7;}
 nav a:active{background-color: #6fc695;}
-p{font-size: 1rem;}
+p,figcaption{font-size: 1rem;}
 img{max-width: 100%;}
-
+button{font-size: 16.5px;background-color: #136546;color:#d8f4e9;padding:4px;
+    border-color: #33b080 #093725 #093725 #33b080;cursor: pointer;}
+button:active{color:#a0c3be;border-color: #093725 #33b080 #33b080 #093725 ;}
 
 .peoplebox img,.crunch,nav img{-ms-interpolation-mode:nearest-neighbor;image-rendering:-webkit-optimize-contrast;image-rendering:-moz-crisp-edges;image-rendering:-o-pixelated;image-rendering:pixelated;box-sizing:border-box}
 /* strange */
@@ -63,6 +65,10 @@ img{max-width: 100%;}
     width:100%;height: auto;border:2px #334b3f solid;align-self:center;
     background-color:#444444;image-rendering: pixelated;
 }
+.imagegrid figure{width: 100%;margin: 0;}
+figure{display: flex;flex-direction: column-reverse;}
+
+.hide{display: none;}
 /* sublimated */
 
 @media screen and (min-width:640px) {
@@ -80,6 +86,9 @@ img{max-width: 100%;}
 @media (min-width: 1024px) {
     .imagegrid {column-count:3}
     article p{font-size:18px;}
+}
+@media screen and (min-width:1280px) {
+    .containment{border-left: 5px #022014 solid;border-right: 5px #022014 solid;}
 }
 /* stupid */
 
