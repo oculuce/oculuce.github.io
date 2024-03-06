@@ -1,10 +1,20 @@
 //a silly for every character
 //every character i have more than like 2 sentences to talk about, in any case
+const toggleDisplay = (target)=>{
+    console.log("-<||>-")
+    console.log(target.id)
+    var theLight = document.getElementById(target.id);   //exactly the same
+    console.log(theLight)
+    theLight.classList.toggle('hide');
 
+}
 
 
 function acaudInfo(){
-    var theSwitch = document.querySelector('#acaudSwitch'); //ok these are like
+    let target = document.getElementById('acaudLight')
+    console.log(target)
+    toggleDisplay(target)
+    /* var theSwitch = document.querySelector('#acaudSwitch'); //ok these are like
     var theLight = document.getElementById('acaudLight');   //exactly the same
 
     if (theLight.classList.contains('hide') ){
@@ -13,13 +23,16 @@ function acaudInfo(){
     }else{
         theLight.classList.add('hide');
         theSwitch.innerHTML = "can you say that again?";
-    }
+    } */
 }
 
 
 
 function mechaeInfo(){
-    var theSwitch = document.getElementById('mechaeSwitch');
+    let target = document.getElementById('mechaeLight')
+    console.log(target)
+    toggleDisplay(target)
+    /* var theSwitch = document.getElementById('mechaeSwitch');
     var theLight = document.getElementById('mechaeLight');
 
     if (theLight.classList.contains('hide')){
@@ -28,13 +41,16 @@ function mechaeInfo(){
     }else{
         theLight.classList.add('hide');
         theSwitch.innerHTML = "read again?";
-    }
+    } */
 }
 
 
 
 function sc4vInfo(){
-    var theSwitch = document.getElementById('sc4vSwitch');
+    let target = document.getElementById('SC4VLight')
+    console.log(target)
+    toggleDisplay(target)
+    /* var theSwitch = document.getElementById('sc4vSwitch');
     var theLight = document.getElementById('sc4vLight');
 
     if (theLight.classList.contains('hide')){
@@ -43,5 +59,5 @@ function sc4vInfo(){
     }else{
         theLight.classList.add('hide');
         theSwitch.innerHTML = "read it again?";
-    }
+    } */
 }
