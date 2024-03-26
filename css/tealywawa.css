@@ -35,7 +35,17 @@ text-decoration: none;}
 header{display: flex;flex-direction: column;}
 header nav{margin-bottom: 15px;display: flex;flex-wrap: wrap;align-items: flex-end;
 text-align: center;}
-header nav img{width: 48px;height: auto;}
+header nav img{width: 48px;height: auto;/* animation: SPIN-Y 5s steps(50) infinite;
+    transform-style: preserve-3d; */}
+
+/* @keyframes SPIN-Y {
+    from{
+        transform: rotateY(0);
+    }to{
+        transform: rotateY(180);
+    }
+} */
+
 article nav{flex-wrap: wrap;display: flex;}
 article nav a{width: fit-content;}
 
