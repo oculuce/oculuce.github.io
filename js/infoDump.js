@@ -11,10 +11,10 @@ const toggleDisplay = (target)=>{
 
 
 function acaudInfo(){
-    let target = document.getElementById('acaudLight')
+    /* let target = document.getElementById('acaudLight')
     console.log(target)
-    toggleDisplay(target)
-    /* var theSwitch = document.querySelector('#acaudSwitch'); //ok these are like
+    toggleDisplay(target) */
+    var theSwitch = document.querySelector('#acaudSwitch'); //ok these are like
     var theLight = document.getElementById('acaudLight');   //exactly the same
 
     if (theLight.classList.contains('hide') ){
@@ -23,16 +23,16 @@ function acaudInfo(){
     }else{
         theLight.classList.add('hide');
         theSwitch.innerHTML = "can you say that again?";
-    } */
+    }
 }
 
 
 
 function mechaeInfo(){
-    let target = document.getElementById('mechaeLight')
+    /* let target = document.getElementById('mechaeLight')
     console.log(target)
-    toggleDisplay(target)
-    /* var theSwitch = document.getElementById('mechaeSwitch');
+    toggleDisplay(target) */
+    var theSwitch = document.getElementById('mechaeSwitch');
     var theLight = document.getElementById('mechaeLight');
 
     if (theLight.classList.contains('hide')){
@@ -41,16 +41,16 @@ function mechaeInfo(){
     }else{
         theLight.classList.add('hide');
         theSwitch.innerHTML = "read again?";
-    } */
+    }
 }
 
 
 
 function sc4vInfo(){
-    let target = document.getElementById('SC4VLight')
+    /* let target = document.getElementById('sc4vLight')
     console.log(target)
-    toggleDisplay(target)
-    /* var theSwitch = document.getElementById('sc4vSwitch');
+    toggleDisplay(target) */
+    var theSwitch = document.getElementById('sc4vSwitch');
     var theLight = document.getElementById('sc4vLight');
 
     if (theLight.classList.contains('hide')){
@@ -59,5 +59,5 @@ function sc4vInfo(){
     }else{
         theLight.classList.add('hide');
         theSwitch.innerHTML = "read it again?";
-    } */
+    }
 }
