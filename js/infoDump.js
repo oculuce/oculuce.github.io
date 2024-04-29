@@ -1,63 +1,90 @@
 //a silly for every character
+    //wronggggg. Uses this new thing that doesnt do that.
 //every character i have more than like 2 sentences to talk about, in any case
-const toggleDisplay = (target)=>{
+
+
+let expandButton = document.querySelectorAll('.expandButton')
+const detectButton = ()=>{
+    expandButton.forEach((element)=>{
+        element.addEventListener("click",(event)=>{
+            if ((event.target.classList == 'expandButton') == true){
+                let hiddenContent = (element.parentElement.querySelector('.hide'))
+                console.log(hiddenContent)
+                if (hiddenContent.classList.contains('show')){
+                    hiddenContent.classList.remove('show');
+                    event.target.innerHTML = "read again?";
+                }else{
+                    hiddenContent.classList.add('show');
+                    event.target.innerHTML = "seen enough?  ";
+                }
+            }else{
+                console.log("How.")
+                return
+            }
+        })
+    })
+}
+detectButton()
+
+
+/* const toggleDisplay = (target)=>{
     console.log("-<||>-")
     console.log(target.id)
-    var theLight = document.getElementById(target.id);   //exactly the same
+    var theLight = document.getElementById(target.id);  
     console.log(theLight)
     theLight.classList.toggle('hide');
+} */
 
-}
 
+// function acaudInfo(){
 
-function acaudInfo(){
-    /* let target = document.getElementById('acaudLight')
-    console.log(target)
-    toggleDisplay(target) */
-    var theSwitch = document.querySelector('#acaudSwitch'); //ok these are like
-    var theLight = document.getElementById('acaudLight');   //exactly the same
+//     var theSwitch = document.querySelector('#acaudSwitch'); //ok these are like
+//     var theLight = document.getElementById('acaudLight');   //exactly the same
 
-    if (theLight.classList.contains('hide') ){
-        theLight.classList.remove('hide');
-        theSwitch.innerHTML = "too much red.";
-    }else{
-        theLight.classList.add('hide');
-        theSwitch.innerHTML = "can you say that again?";
-    }
-}
+//     if (theLight.classList.contains('hide') ){
+//         theLight.classList.remove('hide');
+//         theSwitch.innerHTML = "too much red.";
+//     }else{
+//         theLight.classList.add('hide');
+//         theSwitch.innerHTML = "can you say that again?";
+//     }
+// }
 
 
 
-function mechaeInfo(){
-    /* let target = document.getElementById('mechaeLight')
-    console.log(target)
-    toggleDisplay(target) */
-    var theSwitch = document.getElementById('mechaeSwitch');
-    var theLight = document.getElementById('mechaeLight');
-
-    if (theLight.classList.contains('hide')){
-        theLight.classList.remove('hide');
-        theSwitch.innerHTML = "seen enough?";
-    }else{
-        theLight.classList.add('hide');
-        theSwitch.innerHTML = "read again?";
-    }
-}
 
 
 
-function sc4vInfo(){
-    /* let target = document.getElementById('sc4vLight')
-    console.log(target)
-    toggleDisplay(target) */
-    var theSwitch = document.getElementById('sc4vSwitch');
-    var theLight = document.getElementById('sc4vLight');
+// function mechaeInfoOFF(){
+//     /* let target = document.getElementById('mechaeLight')
+//     console.log(target)
+//     toggleDisplay(target) */
+//     var theSwitch = document.getElementById('mechaeSwitch');
+//     var theLight = document.getElementById('mechaeLight');
 
-    if (theLight.classList.contains('hide')){
-        theLight.classList.remove('hide');
-        theSwitch.innerHTML = "less, please";
-    }else{
-        theLight.classList.add('hide');
-        theSwitch.innerHTML = "read it again?";
-    }
-}
+//     if (theLight.classList.contains('hide')){
+//         theLight.classList.remove('hide');
+//         theSwitch.innerHTML = "seen enough?";
+//     }else{
+//         theLight.classList.add('hide');
+//         theSwitch.innerHTML = "read again?";
+//     }
+// }
+
+
+
+// function sc4vInfo(){
+//     /* let target = document.getElementById('sc4vLight')
+//     console.log(target)
+//     toggleDisplay(target) */
+//     var theSwitch = document.getElementById('sc4vSwitch');
+//     var theLight = document.getElementById('sc4vLight');
+
+//     if (theLight.classList.contains('hide')){
+//         theLight.classList.remove('hide');
+//         theSwitch.innerHTML = "less, please";
+//     }else{
+//         theLight.classList.add('hide');
+//         theSwitch.innerHTML = "read it again?";
+//     }
+// }

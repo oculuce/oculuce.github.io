@@ -6,7 +6,7 @@
     <title>my various Guys</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='css/tealywawa.css'>
-    <script src='js/infoDump.js'></script>
+    <script defer src='js/infoDump.js'></script>
     <link rel="icon" type="image/x-icon" href="images/icons/scicon.png">
 </head>
 <body background="images/griddy/greenyEyes.png"><div class="containment">
@@ -41,20 +41,30 @@
                 <p>Mildly acidic and mildly impish, these creatures are a relatively common sight in the sky islands.
                     Individual fiends are just barely sapient and rather clumsy, while 'hives' of blood fiends are mostly-fully
                     functional people you can hold a conversation with.</p>
-                <div id="acaudLight" class="hide">
-                    <p>The three main parts of a blood fiend are its eye, its boiling acidic 'blood', and the highly insulative membrane keeping them together.</p>
-                    <p>blabla</p>
+                <div id="fiendLight" class="hide">
+                    <p>The three main parts of a blood fiend are its eye, its boiling acidic 'blood', and the highly insulative membrane
+                        keeping them together.</p>
+                    <div class="imagegrid">
+                    </div>
                 </div>
-                <button id="acaudSwitch" onclick="acaudInfo()">more red, please</button>
+                <button class="expandButton">more red, please</button>
             </article>
         </article>
+        
         <article class="vermilliwrong">
-    
             <div class="biobar"><img src="images/icons/acaudSmall.png"><li>Acaud</li> <li>She/They</li> <li>Blood Fiend</li> <li>Budding Blacksmith</li></div>
             <article>
                 <p>A hive of blood fiends who are just really into blacksmithing. Her interest was
                     ignited when they found a nearly pristine anvil in the middle of nowhere. Yay.
                 </p>
+                <div id="fiendLight" class="hide">
+                    <p>big anvil for repairing enemy armour into scrap metal.</p>
+                    <div class="imagegrid">
+                        <a href="images/art/june-july2023/acaud.jpg" target="_blank"><img loading="lazy"
+                            src="images/art/june-july2023/acaud_small.jpg"></a>
+                    </div>
+                </div>
+                <button class="expandButton">appearance?</button>
             </article>
         </article>
 </main>
