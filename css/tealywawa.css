@@ -86,7 +86,8 @@ button:active{color:#a0c3be;border-color: #093725 #33b080 #33b080 #093725 ;}
     width:100%;height: auto;border:2px #334b3f solid;align-self:center;
     background-color:#444444;image-rendering: pixelated;
 }
-.imagegrid figure{width: 100%;margin: 0;break-inside: avoid;margin-bottom: 1rem;}
+.imagegrid figure{width: 100%;margin: 0;break-inside: avoid;margin-bottom: 1rem;
+text-align: center;}
 figure{display: flex;flex-direction: column;}
 
 .hide{display: none;}
