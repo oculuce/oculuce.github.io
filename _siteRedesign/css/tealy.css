@@ -1,0 +1,95 @@
+/* why are you looking at my css. anyways I write css like this if you want to
+see this in proper format for some reason then copy paste to visual studio code and
+do shift+alt+F */
+
+/* variables */
+/* --------- */
+:root{
+    --teal:#46899f;
+}
+
+@keyframes buttonRotate{
+    0%{transform:rotate(0deg);}
+    25%{transform:rotate(1.5deg) scale(1.05) perspective(1px);}
+    75%{transform:rotate(-1.5deg) scale(1.05) perspective(1px);}
+    100%{transform:rotate(0deg) scale(1.05) perspective(1px);}
+}
+/* text */
+/* ---- */
+p{font-size: 1rem;}
+a{text-decoration: none;}
+h1{text-align: center;}
+
+/* encompassing and descending */
+/* --------------------------- */
+html{box-sizing: border-box;}
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
+img{-ms-interpolation-mode:nearest-neighbor;image-rendering:-webkit-optimize-contrast;image-rendering:-moz-crisp-edges;image-rendering:-o-pixelated;image-rendering:pixelated;box-sizing:border-box}
+
+body{font-family:monospace;background-color:#05222d;margin:0;}
+.containment{margin: 0 auto;background-color:#10675d;
+    background: linear-gradient(180deg, #10675d 60%, #05222d00 95%);
+border-right:solid #6ea389;}
+
+header{max-height: 20rem;background-color: #80c4a3;padding: 1rem;
+display: flex;flex-direction: row;justify-content: space-between;
+background: linear-gradient(180deg, #80c4a3 98%, #05222d00 100%);
+padding-bottom: 1rem;}
+header nav{display: flex;flex-direction: column;justify-content: center;
+align-items: center;}
+
+nav a{width: 13ch;font-size: 1rem;padding: 0.45rem;background-color: #000;
+margin: 0.25rem 0;color: #fff;border:3px solid #9ed7bc;
+border-color: #9ed7bc #335f4b #335f4b #9ed7bc;
+transition-duration:0.1s;}
+nav a:hover{background-color: #042f41;transform: scale(1.05) perspective(1px);
+    animation: buttonRotate 0.2s;}
+nav a:active{background-color: #0b4951;color: #a9d5c4;
+    border-color: #335f4b #9ed7bc #9ed7bc #335f4b;
+    transform: scale(0.95) perspective(1px);
+    }
+
+
+
+main{/* background-color: #2e4d49; */padding: 2rem 1rem;
+display: flex;flex-wrap: wrap;}
+
+
+
+article{background-color: #b6e4ca;padding: 1rem;margin: 0.5rem;
+    border:#00000000 20px solid;border-radius:3px;
+    border-image:url(../images/griddy/borderwawa.png)30 round;}
+    /* articolours */
+
+
+img{width: 100%;}
+/* small, specific */
+/* --------------- */
+.headerIcon{width: 150px;margin-bottom: 2rem;}
+
+.flex{display: flex;flex-wrap: wrap;}
+.column{flex-direction: column;}
+
+.peoplebox{align-items: center;justify-content: space-between;}
+.peoplebox img{max-width: 100px;} /* alternative main>div:nth-child(2)>div:nth-child(2) */
+/* stupid */
+/* ------ */
+
+.squish{transition-duration:500ms;}
+.squish:hover{margin:100px;box-shadow:0px 0px 30px #ff0066 inset, 0px 10px 20px #ff0066
+    ;transform: scale(0.5) perspective(1px);}
+
+/* size */
+/* ---- */
+@media screen and (min-width:640px){
+    .containment{margin: 0 5%;}
+    header{float: left;max-height: fit-content;flex-direction: column;}
+    main>div:nth-child(2){display: flex;}
+}
+@media (min-width: 1024px){
+}
+@media screen and (min-width:1280px){
+
+}

@@ -3,7 +3,7 @@
   } */
 /* solid */
 body{font-family:monospace;background-color:#05222d;margin:0;}
-.containment{margin: 0 auto;background-color:rgb(16,103,93); background: rgb(16,103,93);
+.containment{margin: 0 auto;background-color:rgb(16,103,93);
     background: linear-gradient(180deg, rgba(16,103,93,1) 50%, #05222d00 90%); 
     padding: 5px;margin:0 auto;max-width: 1280px;padding-top: 1rem;}
 main{flex-wrap: wrap;gap: 10px 10px;background-color: #187b6f;padding:5px;
@@ -80,14 +80,14 @@ button:active{color:#a0c3be;border-color: #093725 #33b080 #33b080 #093725 ;}
 .flex{display: flex;}
 
 .imagegrid{
-    column-count:1;
+    columns:1;
 }
 .imagegrid img{
     width:100%;height: auto;border:2px #334b3f solid;align-self:center;
     background-color:#444444;image-rendering: pixelated;
 }
-.imagegrid figure{width: 100%;margin: 0;}
-figure{display: flex;flex-direction: column-reverse;}
+.imagegrid figure{width: 100%;margin: 0;break-inside: avoid;margin-bottom: 1rem;}
+figure{display: flex;flex-direction: column;}
 
 .hide{display: none;}
 .show {display: block !important;}
@@ -103,10 +103,10 @@ figure{display: flex;flex-direction: column-reverse;}
     header nav img{width: 150px;}
     header nav a{width: 100%;}
 
-    .imagegrid{column-count:2;}
+    .imagegrid{columns:2;}
 }
 @media (min-width: 1024px) {
-    .imagegrid {column-count:3}
+    .imagegrid {columns:3}
     article p{font-size:18px;}
 }
 @media screen and (min-width:1280px) {
