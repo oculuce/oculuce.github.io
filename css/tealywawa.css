@@ -9,6 +9,15 @@ body{font-family:monospace;background-color:#05222d;margin:0;}
 main{flex-wrap: wrap;gap: 10px 10px;background-color: #187b6f;padding:5px;
 display: flex;}
 
+/* 
+img:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    background-image: url(../../images/sluggy.png);
+} */
+
+
 
 
 article,.hide{background-color:#c2eed5;padding: 10px;
