@@ -1,4 +1,5 @@
 // taken from https://corru.observer/js/buddy_extern.js hii
+// i didant make AAANNNYYY of this !!! Play Corru Observer
 
 /* quickly hacked up buddy for use outside of the main site, may have vestigial parts */
 
