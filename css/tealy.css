@@ -93,16 +93,16 @@ img{width: 100%;}
 /* art page */
 .imageDisplay{background-color: #00000070;position: fixed;width: 100%;
     height: 100%;top:0;display: none;justify-content: space-around;
-align-items: center;}
+align-items: center;padding: 1rem;}
 /* .imageDisplay:target{display: block;} Actually no I'm not doing this*/
-.imageDisplay div:nth-child(2){max-width: 70%;min-width: 30%;border: 5px solid #042f41;
-max-height: 100%;}
+.imageDisplay div:nth-child(2){max-width: 90%;min-width: 80%;border: 5px solid #042f41;
+max-height: 95%;overflow: scroll;}
 .imageDisplay img{max-width: 100%;background-color: #0000006c;}
 
 .artGrid a{width: 100%;margin: 0;break-inside: avoid;margin-bottom: 1rem;
     text-align: center;display: block;border: 2px solid #0b4951;
-background-color: #dbf4e5;}
-.artGrid p{margin-top: 0.5rem;}
+background-color: #dbf4e5;color: #000;}
+.artGrid p{margin-top: 0.5rem;display: block;break-inside: avoid;}
 .artGrid img{border-bottom: 2px solid #0b4951;}
 
 /* stupid */
@@ -119,9 +119,11 @@ background-color: #dbf4e5;}
     header{float: left;max-height: fit-content;flex-direction: column;}
     .flex640{display: flex;}
     .artGrid{columns: 1;}
+    .imageDisplay div:nth-child(2){min-width: 70%;}
 }
 @media (min-width: 1024px){
     .artGrid{columns: 2;}
+    .imageDisplay div:nth-child(2){min-width: 50%;}
 }
 @media screen and (min-width:1280px){
     .artGrid{columns: 3;}
