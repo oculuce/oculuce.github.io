@@ -90,6 +90,8 @@ img{width: 100%;}
 .peoplebox{align-items: center;justify-content: space-between;}
 .peoplebox img{max-width: 100px;} /* alternative main>div:nth-child(2)>div:nth-child(2) */
 
+.memoryMimic{transform: rotate(1080deg) scale(10) !important;transition-duration: 10s !important;}
+
 /* art page */
 .imageDisplay{background-color: #00000070;position: fixed;width: 100%;
     height: 100%;top:0;display: none;justify-content: space-around;
@@ -104,6 +106,8 @@ max-height: 95%;overflow: scroll;}
 background-color: #dbf4e5;color: #000;}
 .artGrid p{margin-top: 0.5rem;display: block;break-inside: avoid;}
 .artGrid img{border-bottom: 2px solid #0b4951;}
+
+.noBreak{break-inside: avoid;}
 
 /* stupid */
 /* ------ */
@@ -123,7 +127,7 @@ background-color: #dbf4e5;color: #000;}
 }
 @media (min-width: 1024px){
     .artGrid{columns: 2;}
-    .imageDisplay div:nth-child(2){min-width: 50%;}
+    .imageDisplay div:nth-child(2){min-width: 60%;min-height: max-content;}
 }
 @media screen and (min-width:1280px){
     .artGrid{columns: 3;}

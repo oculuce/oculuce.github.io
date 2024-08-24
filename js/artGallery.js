@@ -7,10 +7,10 @@
 //     console.log("wawawa")
 // })
 let detectLink = document.querySelector('.detectLink')
-console.log(detectLink)
+// console.log(detectLink)
 
 let image = detectLink.querySelectorAll('a')
-console.log(image[2])
+// console.log(image[2])
 
 
 let imageDisplay = document.querySelector('.imageDisplay')
