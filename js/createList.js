@@ -1,0 +1,3 @@
+// hi alrighty the idea is to uhhhmm right to make a js that 
+//takes objects or whatever and creates a list. this is Yay for me because then- well the real reason is so i can do some J! S! but also it makes adding
+//bozos less tedious. probably...
