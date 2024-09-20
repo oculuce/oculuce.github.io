@@ -18,21 +18,21 @@ let imageContainer = document.querySelector('#imageContainer')
 const detectImage =()=>{
     image.forEach((element)=>{
         element.addEventListener("click",(event)=>{
-            console.log(element.href.startsWith('https'))
+            // console.log(element.href.startsWith('https'))
             if (element.href == null || element.href.startsWith('https://artfight') == true){
                 return
             } else {
             event.preventDefault()
             imageDisplay.classList.add('show-flex')
-            console.log(imageContainer.src)
+            // console.log(imageContainer.src)
             imageContainer.src = element.href
         }
         })
     })
 }
 detectImage()
-imageDisplay.addEventListener("click",(event)=>{
+imageDisplay.addEventListener("click",(/* event */)=>{
     imageDisplay.classList.remove('show-flex')
 })
-let gungus = 5
-console.log(gungus+= 1)
+/* let gungus = 5
+console.log(gungus+= 1) */

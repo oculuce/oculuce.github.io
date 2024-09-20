@@ -19,7 +19,7 @@ do shift+alt+F */
 .show-flex{display: flex !important;}
 /* text */
 /* ---- */
-p{font-size: 1rem;}
+p{font-size: 1.1rem;}
 a{text-decoration: none;}
 h1{text-align: center;}
 
@@ -59,12 +59,8 @@ nav a:hover,.peoplebox a:hover,.art-grid a:hover{transform: scale(1.05) perspect
     animation: buttonRotate 0.2s;}
 nav a:active,.peoplebox a:active,.art-grid a:active{transform: scale(0.95) perspective(1px);}
 
-
-
 main{/* background-color: #2e4d49; */padding: 2rem 1rem;
 display: flex;flex-wrap: wrap;}
-
-
 
 article{background-color: #b6e4ca;padding: 1rem;margin: 0.5rem;
     border:#00000000 20px solid;border-radius:3px;
@@ -72,12 +68,9 @@ article{background-color: #b6e4ca;padding: 1rem;margin: 0.5rem;
 article>article{background-color: #a8ceb9;padding: 0.5rem;}
     /* articolours */
 
-
 img{width: 100%;}
 
 .row-nav{display: flex;flex-wrap: wrap;gap: 0.2rem;}
-
-
 
 /* small, specific */
 /* --------------- */
@@ -91,7 +84,7 @@ img{width: 100%;}
 .peoplebox img{max-width: 100px;} /* alternative main>div:nth-child(2)>div:nth-child(2) */
 
 .memoryMimic{transform: rotate(1080deg) scale(10) !important;transition-duration: 10s !important;}
-
+.update{height: 30rem;overflow: scroll;}
 /* art page */
 .imageDisplay{background-color: #00000070;position: fixed;width: 100%;
     height: 100%;top:0;display: none;justify-content: space-around;
@@ -110,15 +103,14 @@ background-color: #dbf4e5;color: #000;}
 .noBreak{break-inside: avoid;}
 
 /* info boxes */
-#characterList>article{background-color:;}
+/* #characterList>article{background-color:;} */
 .biobar{list-style-type: none;display:flex;gap:10px;flex-wrap:wrap;align-items: center;}
-.biobar li{font-size: 20px;font-weight: bold;background-color:#9ec4b4;padding:15px;border-radius:5px;
+.biobar li{font-size: 1.5rem;font-weight: bold;background-color:#dff1ea;padding:15px;border-radius:5px;
     text-decoration: none;}
 .biobar img{width: 64px;height: auto;;border: 2px #0b4951 solid;}
 
 /* stupid */
 /* ------ */
-
 .squish{transition-duration:500ms;}
 .squish:hover{margin:100px;box-shadow:0px 0px 30px #ff0066 inset, 0px 10px 20px #ff0066
     ;transform: scale(0.5) perspective(1px);}
