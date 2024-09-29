@@ -137,6 +137,7 @@ background-color: #dbf4e5;color: #000;}
 nav a:hover,.peoplebox a:hover,.art-grid a:hover{transform: none;
     animation: none;}
 nav a:active,.peoplebox a:active,.art-grid a:active{transform: none;}
-.squish:hover{display: none;}
+.squish:hover{margin:0;box-shadow:0px 0px 30px #ff0066 inset, 0px 10px 20px #ff0066
+    ;transform: none;}
 }
   
