@@ -97,10 +97,11 @@ max-height: 95%;overflow: scroll;}
 .art-grid a{width: 100%;margin: 0;break-inside: avoid;margin-bottom: 1rem;
     text-align: center;display: block;border: 2px solid #0b4951;
 background-color: #dbf4e5;color: #000;}
+.art-grid > div{break-inside: avoid;}
 .art-grid p{margin-top: 0.5rem;display: block;break-inside: avoid;}
 .art-grid img{border-bottom: 2px solid #0b4951;}
 
-.noBreak{break-inside: avoid;}
+.noBreak{}
 
 /* info boxes */
 /* #characterList>article{background-color:;} */
