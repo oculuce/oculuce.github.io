@@ -6,16 +6,15 @@
 let expandButton = document.querySelectorAll('.expandButton')
 const detectButton = ()=>{
     expandButton.forEach((element)=>{
+        let hiddenContent = (element.parentElement.querySelector('.hide'))
         element.addEventListener("click",(event)=>{
             if ((event.target.classList == 'expandButton') == true){
-                let hiddenContent = (element.parentElement.querySelector('.hide'))
                 console.log(hiddenContent)
-                if (hiddenContent.classList.contains('show')){
-                    hiddenContent.classList.remove('show');
+                hiddenContent.classList.toggle('hide')
+                if (hiddenContent.classList.contains('hide')){
                     event.target.innerHTML = "read again?";
                 }else{
-                    hiddenContent.classList.add('show');
-                    event.target.innerHTML = "seen enough?  ";
+                    event.target.innerHTML = "seen enough?";
                 }
             }else{
                 console.log("How.")

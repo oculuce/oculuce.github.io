@@ -21,9 +21,10 @@ do shift+alt+F */
 /* ---- */
 p{font-size: 1.1rem;}
 a{text-decoration: none;}
-h1{text-align: center;}
-
-.interest h2{margin-bottom: 0.5rem;font-weight: bolder;}
+h1{text-align: center;font-size: 2rem;}
+h2{margin-bottom: 1rem;font-weight: bolder;font-size: 1.8rem;}
+h3{font-size: 1.4rem;text-decoration: underline;margin-bottom: 0.5rem;}
+h4{font-size: 1.2rem;margin-bottom: 0.5rem;}
 /* encompassing and descending */
 /* --------------------------- */
 html{box-sizing: border-box;}
@@ -31,6 +32,10 @@ html{box-sizing: border-box;}
     box-sizing: inherit;
   }
 img{-ms-interpolation-mode:nearest-neighbor;image-rendering:-webkit-optimize-contrast;image-rendering:-moz-crisp-edges;image-rendering:-o-pixelated;image-rendering:pixelated;box-sizing:border-box}
+
+
+
+
 
 body{font-family:monospace;background-color:#05222d;margin:0;}
 .containment{margin: 0 auto;background-color:#10675d;
@@ -45,12 +50,12 @@ header nav{display: flex;flex-direction: column;justify-content: center;
 align-items: center;}
 header nav a{width: 13ch;}
 
-nav a{font-size: 1rem;padding: 0.45rem;background-color: #000;
+nav a,button{font-size: 1rem;padding: 0.45rem;background-color: #000;
 margin: 0.25rem 0;color: #fff;border:3px solid #9ed7bc;
-border-color: #9ed7bc #335f4b #335f4b #9ed7bc;
+border-color: #9ed7bc #335f4b #335f4b #9ed7bc;cursor: pointer;
 }
 nav a:hover{background-color: #042f41;}
-nav a:active{background-color: #0b4951;color: #a9d5c4;
+nav a:active,button:active{background-color: #0b4951;color: #a9d5c4;
     border-color: #335f4b #9ed7bc #9ed7bc #335f4b;
     
     }
@@ -75,6 +80,7 @@ img{width: 100%;}
 /* small, specific */
 /* --------------- */
 .headerIcon{width: 150px;}
+.hide{display: none;}
 
 .flex{display: flex;flex-wrap: wrap;}
 .column{flex-direction: column;}
