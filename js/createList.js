@@ -12,7 +12,7 @@ const getDescriptions = () => {
             "name": "SC-4V",
             "image": "../images/sluggy.png",
             "bio": ["Skittish Survivor", "They/She", "alternatively Essie :}"],
-            "description": "The storage of a shipping container stuffed into a robot with the temperament of a particularly wary rabbit.</p><p>They are a big hoarding fan, though they do still use the baubles and items they collect... mostly by throwing her current least favourite rock at foes, but they can be occasionally seen using other objects as well. This usually includes parts from other robots, either salvaged from refuse or collected from robots who are too busy being dead to pay attention to their surroundings."
+            "description": "Skittish storage container of a robot.</p><p>They are a big hoarding fan, though they do still use the baubles and items they collect... mostly by throwing her current least favourite rock at foes, but they can be occasionally seen using other objects as well. This usually includes parts from other robots, either salvaged from refuse or collected from robots who are too busy being dead to pay attention to their surroundings."
         },
         {
             "characterID": 2,
@@ -21,16 +21,52 @@ const getDescriptions = () => {
             "name": "Zylvezter",
             "image": "../images/sluggy.png",
             "bio": ["Exanimate Excavator", "He/She"],
-            "description": "Recent cordysect convert using his newfound vitality to get into otherwise fatal fights. The pickaxe she wields is primarily used to excuse herself as an excavator."
+            "description": "Recent cordysect convert using his newfound vitality to get into otherwise fatal fights. The pickaxe she wields is mostly used to fake being an excavator whenever someone asks why he's in restricted areas."
         },
         {
             "characterID": 3,
             "colourScheme": "",
-            "location":"",
-            "name": "scug",
+            "location":"depths",
+            "name": "Ieda",
+            "image": "../images/sluggy.png",
+            "bio": ["Horticultural ???", "She/They"],
+            "description": "Menace to society. Friend of cordysects. Full of plants."
+        },
+        {
+            "characterID": 4,
+            "colourScheme": "",
+            "location":"depths",
+            "name": "Avo",
+            "image": "../images/sluggy.png",
+            "bio": ["??? ???", "She/They"],
+            "description": "A droplet that accidentally fell into the depths after wandering off from her hive for a moment."
+        },
+        {
+            "characterID": 5,
+            "colourScheme": "",
+            "location":"depths",
+            "name": "Advanced Incredible Endemic Edifice",
+            "image": "../images/sluggy.png",
+            "bio": [],
+            "description": "Big disorganized building with a hobby of trying to find answers without asking any questions."
+        },
+        {
+            "characterID": 6,
+            "colourScheme": "",
+            "location":"depths",
+            "name": "MOOK",
             "image": "../images/sluggy.png",
             "bio": ["wawa2", "wawa THREE", "What!!!", `bye`],
-            "description": "wawa worllldd sequel"
+            "description": "Relentess hunter sentenced to wrangling their clones to do their job. Still a threat to any would-be scavengers, as theres nothing stopping them from cashing in a sick-day in the middle of teaching."
+        },
+        {
+            "characterID": 7,
+            "colourScheme": "",
+            "location":"depths",
+            "name": "MOOK",
+            "image": "../images/sluggy.png",
+            "bio": ["wawa2", "wawa THREE", "What!!!", `bye`],
+            "description": "Similar to MOOK, minus the work ethic or bloodlust or anything that would make MOOK teaching them any easier."
         }
     ]
 }
@@ -41,7 +77,7 @@ const renderDescriptions = () => {
     console.log(characterList)
     characterList.forEach((character) => {
         let charID = character.characterID
-        descriptionArea.innerHTML += `
+        descriptionArea.waitdontdothat HOLD ON += `
         <article>
             <div class="biobar ${character.colourScheme}" id="${charID}"><img src="${character.image}"><li>${character.name}</li></div>
             <p>${character.description}
