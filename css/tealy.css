@@ -6,6 +6,8 @@ do shift+alt+F */
 /* --------- */
 :root{
     --teal:#46899f;
+    --dark-green-margin:#335f4b;
+    --light-green-margin:#9ed7bc;
 }
 
 @keyframes buttonRotate{
@@ -17,6 +19,7 @@ do shift+alt+F */
 
 .show-block{display: block !important;}
 .show-flex{display: flex !important;}
+
 /* text */
 /* ---- */
 p{font-size: 1.1rem;}
@@ -25,6 +28,7 @@ h1{text-align: center;font-size: 2rem;}
 h2{margin-bottom: 1rem;font-weight: bolder;font-size: 1.8rem;}
 h3{font-size: 1.4rem;text-decoration: underline;margin-bottom: 0.5rem;}
 h4{font-size: 1.2rem;margin-bottom: 0.5rem;}
+
 /* encompassing and descending */
 /* --------------------------- */
 html{box-sizing: border-box;}
@@ -51,12 +55,12 @@ align-items: center;}
 header nav a{width: 13ch;}
 
 nav a,button{font-size: 1rem;padding: 0.45rem;background-color: #000;
-margin: 0.25rem 0;color: #fff;border:3px solid #9ed7bc;
-border-color: #9ed7bc #335f4b #335f4b #9ed7bc;cursor: pointer;
+margin: 0.25rem 0;color: #fff;border:3px solid var(--light-green-margin);
+border-color: var(--light-green-margin) var(--dark-green-margin) var(--dark-green-margin) var(--light-green-margin);cursor: pointer;
 }
 nav a:hover{background-color: #042f41;}
 nav a:active,button:active{background-color: #0b4951;color: #a9d5c4;
-    border-color: #335f4b #9ed7bc #9ed7bc #335f4b;
+    border-color: var(--dark-green-margin) var(--light-green-margin) var(--light-green-margin) var(--dark-green-margin);
     
     }
 nav a,.peoplebox a,.art-grid a{transition-duration:0.1s;}
@@ -70,7 +74,7 @@ display: flex;flex-wrap: wrap;}
 article{background-color: #b6e4ca;padding: 1rem;margin: 0.5rem;
     border:#00000000 20px solid;border-radius:3px;
     border-image:url(../images/griddy/borderwawa.png)30 round;}
-article>article{background-color: #a8ceb9;padding: 0.5rem;}
+article>article{background-color: #a9d5c4;padding: 0.5rem;}
     /* articolours */
 
 img{width: 100%;}
@@ -79,7 +83,7 @@ img{width: 100%;}
 
 /* small, specific */
 /* --------------- */
-.headerIcon{width: 150px;}
+.header-icon{width: 150px;}
 .hide{display: none;}
 
 .flex{display: flex;flex-wrap: wrap;}
@@ -95,7 +99,7 @@ img{width: 100%;}
 .imageDisplay{background-color: #00000070;position: fixed;width: 100%;
     height: 100%;top:0;display: none;justify-content: space-around;
 align-items: center;padding: 1rem;}
-/* .imageDisplay:target{display: block;} Actually no I'm not doing this*/
+/* .imageDisplay:target{display: block;} Actually no I'm not doing this. Shoutout to sira0xff.netlify.app go look at the arts there. Wait shouldn't I like put a button for this and not hide it in the code. Is there a button?*/
 .imageDisplay div:nth-child(2){max-width: 90%;min-width: 80%;border: 5px solid #042f41;
 max-height: 95%;overflow: scroll;}
 .imageDisplay img{max-width: 100%;background-color: #0000006c;}
@@ -106,8 +110,6 @@ background-color: #dbf4e5;color: #000;}
 .art-grid > div{break-inside: avoid;}
 .art-grid p{margin-top: 0.5rem;display: block;break-inside: avoid;}
 .art-grid img{border-bottom: 2px solid #0b4951;}
-
-.noBreak{}
 
 /* info boxes */
 /* #characterList>article{background-color:;} */
@@ -141,10 +143,10 @@ background-color: #dbf4e5;color: #000;}
 
 @media (prefers-reduced-motion) {
     nav a,.peoplebox a,.art-grid a{transition-duration:0;}
-nav a:hover,.peoplebox a:hover,.art-grid a:hover{transform: none;
+    nav a:hover,.peoplebox a:hover,.art-grid a:hover{transform: none;
     animation: none;}
-nav a:active,.peoplebox a:active,.art-grid a:active{transform: none;}
-.squish:hover{margin:0;box-shadow:0px 0px 30px #ff0066 inset, 0px 10px 20px #ff0066
+    nav a:active,.peoplebox a:active,.art-grid a:active{transform: none;}
+    .squish:hover{margin:0;box-shadow:0px 0px 30px #ff0066 inset, 0px 10px 20px #ff0066
     ;transform: none;}
 }
   
