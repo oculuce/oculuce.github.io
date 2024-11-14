@@ -47,7 +47,7 @@ body{font-family:monospace;background-color:#05222d;margin:0;}
 border-right:solid #6ea389;}
 
 header{max-height: 20rem;background-color: #80c4a3;padding: 1rem;
-display: flex;flex-direction: row;justify-content: space-between;
+display: flex;flex-direction: row;justify-content: space-between;align-items: center;
 background: linear-gradient(180deg, #80c4a3 98%, #05222d00 100%);
 padding-bottom: 1rem;}
 header nav{display: flex;flex-direction: column;justify-content: center;
@@ -58,7 +58,7 @@ nav a,button{font-size: 1rem;padding: 0.45rem;background-color: #000;
 margin: 0.25rem 0;color: #fff;border:3px solid var(--light-green-margin);
 border-color: var(--light-green-margin) var(--dark-green-margin) var(--dark-green-margin) var(--light-green-margin);cursor: pointer;
 }
-nav a:hover{background-color: #042f41;}
+nav a:hover,button:hover{background-color: #042f41;}
 nav a:active,button:active{background-color: #0b4951;color: #a9d5c4;
     border-color: var(--dark-green-margin) var(--light-green-margin) var(--light-green-margin) var(--dark-green-margin);
     
@@ -95,6 +95,9 @@ img{width: 100%;}
 
 .memoryMimic{transform: rotate(1080deg) scale(10) !important;transition-duration: 10s !important;}
 .update{height: 30rem;overflow: scroll;}
+
+.effigy{cursor: pointer !important;}
+
 /* art page */
 .imageDisplay{background-color: #00000070;position: fixed;width: 100%;
     height: 100%;top:0;display: none;justify-content: space-around;
@@ -120,8 +123,8 @@ background-color: #dbf4e5;color: #000;}
 
 /* stupid */
 /* ------ */
-.squish{transition-duration:500ms;}
-.squish:hover{margin:100px;box-shadow:0px 0px 30px #ff0066 inset, 0px 10px 20px #ff0066
+.squish{transition-duration:1000ms;}
+.squish:hover{margin-right:100px;box-shadow:0px 0px 30px #ff0066 inset, 0px 10px 20px #ff0066
     ;transform: scale(0.5) perspective(1px);}
 
 /* specific */
