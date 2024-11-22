@@ -12,9 +12,9 @@ const detectButton = ()=>{
                 console.log(hiddenContent)
                 hiddenContent.classList.toggle('hide')
                 if (hiddenContent.classList.contains('hide')){
-                    event.target.innerHTML = "read again?";
+                    event.target.innerHTML = "OPEN AGAIN?";
                 }else{
-                    event.target.innerHTML = "seen enough?";
+                    event.target.innerHTML = "CLOSE?";
                 }
             }else{
                 console.log("How.")

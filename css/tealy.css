@@ -107,6 +107,9 @@ align-items: center;padding: 1rem;}
 max-height: 95%;overflow: scroll;}
 .imageDisplay img{max-width: 100%;background-color: #0000006c;}
 
+/* .force-height{min-width: 0% !important;}
+.force-height img{height: 90vh;} */
+
 .art-grid a{width: 100%;margin: 0;break-inside: avoid;margin-bottom: 1rem;
     text-align: center;display: block;border: 2px solid #0b4951;
 background-color: #dbf4e5;color: #000;}
