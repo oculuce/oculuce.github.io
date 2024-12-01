@@ -6,8 +6,8 @@ do shift+alt+F */
 /* --------- */
 :root{
     --teal:#46899f;
-    --dark-green-margin:#335f4b;
-    --light-green-margin:#9ed7bc;
+    --dark-green-margin:#335f44;
+    --light-green-margin:#9ed7d0;
 }
 
 @keyframes buttonRotate{
@@ -42,9 +42,12 @@ img{-ms-interpolation-mode:nearest-neighbor;image-rendering:-webkit-optimize-con
 
 
 body{font-family:monospace;background-color:#05222d;margin:0;}
-.containment{margin: 0 auto;background-color:#10675d;
-    background: linear-gradient(180deg, #10675d 60%, #05222d00 95%);
-border-right:solid #6ea389;}
+.containment{margin: 0 auto;max-width: 1100px;}
+.containment{background-color:#10675d;
+    background: linear-gradient(180deg, #10675dbe 40%, #05222d00 95%);box-shadow: 
+    3px 0 0 0 #a7e2d6, 10px 0 0 0 #87c0b5, 15px 0 0 0 #568a77, 18px 0 0 0 #2d421a,
+    -3px 0 0 0 #2d421a, -10px 0 0 0 #568a77, -15px 0 0 0 #87c0b5, -18px 0 0 0 #a7e2d6}
+
 
 header{max-height: 20rem;background-color: #80c4a3;padding: 1rem;
 display: flex;flex-direction: row;justify-content: space-between;align-items: center;
@@ -133,13 +136,13 @@ background-color: #dbf4e5;color: #000;}
 /* specific */
 /* ---- */
 @media screen and (min-width:640px){
-    .containment{margin: 0 5%;}
+    /* .containment{margin: 0 5%;} */
     header{float: left;max-height: fit-content;flex-direction: column;}
-    .flex640{display: flex;}
+    .grid-4-6{display: grid;grid-template-columns: 4fr 6fr;}
     .art-grid{columns: 1;}
     .imageDisplay div:nth-child(2){min-width: 70%;}
 }
-@media (min-width: 1024px){
+@media screen and (min-width: 1024px){
     .art-grid{columns: 2;}
     .imageDisplay div:nth-child(2){min-width: 60%;min-height: max-content;}
 }
