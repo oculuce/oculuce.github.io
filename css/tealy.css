@@ -12,8 +12,8 @@ do shift+alt+F */
 
 @keyframes buttonRotate{
     0%{transform:rotate(0deg);}
-    25%{transform:rotate(1deg) scale(1.05) perspective(1px);}
-    75%{transform:rotate(-1deg) scale(1.05) perspective(1px);}
+    25%{transform:rotate(0.3deg) scale(1.05) perspective(1px);}
+    75%{transform:rotate(-0.3deg) scale(1.05) perspective(1px);}
     100%{transform:rotate(0deg) scale(1.05) perspective(1px);}
 }
 
@@ -43,16 +43,19 @@ img{-ms-interpolation-mode:nearest-neighbor;image-rendering:-webkit-optimize-con
 
 body{font-family:monospace;background-color:#05222d;margin:0;}
 .containment{margin: 0 auto;max-width: 1100px;}
-.containment{background-color:#10675d;
+.side-border{background-color:#10675d;
     background: linear-gradient(180deg, #10675dbe 40%, #05222d00 95%);box-shadow: 
-    3px 0 0 0 #a7e2d6, 10px 0 0 0 #87c0b5, 15px 0 0 0 #568a77, 18px 0 0 0 #2d421a,
-    -3px 0 0 0 #2d421a, -10px 0 0 0 #568a77, -15px 0 0 0 #87c0b5, -18px 0 0 0 #a7e2d6}
+    3px 0 0 0 #a7e2d6, 10px 0 0 0 #87c0b5, 17px 0 0 0 #568a77, 20px 0 0 0 #2d421a,
+    -3px 0 0 0 #2d421a, -10px 0 0 0 #568a77, -17px 0 0 0 #87c0b5, -20px 0 0 0 #a7e2d6}
 
 
 header{max-height: 20rem;background-color: #80c4a3;padding: 1rem;
-display: flex;flex-direction: row;justify-content: space-between;align-items: center;
 background: linear-gradient(180deg, #80c4a3 98%, #05222d00 100%);
-padding-bottom: 1rem;}
+padding-bottom: 1rem;margin-top: 18px;
+box-shadow: 
+    0 3px 0 0 #a7e2d6, 0 10px 0 0 #87c0b5, 0 15px 0 0 #568a77, 0 18px 0 0 #2d421a,
+    0 -3px 0 0 #2d421a, 0 -10px 0 0 #568a77, 0 -15px 0 0 #87c0b5, 0 -18px 0 0 #a7e2d6}
+header .containment{display: flex;flex-direction: row;justify-content: space-between;align-items: center;}
 header nav{display: flex;flex-direction: column;justify-content: center;
 align-items: center;}
 header nav a{width: 13ch;}
@@ -104,7 +107,7 @@ img{width: 100%;}
 /* art page */
 .imageDisplay{background-color: #00000070;position: fixed;width: 100%;
     height: 100%;top:0;display: none;justify-content: space-around;
-align-items: center;padding: 1rem;}
+align-items: center;padding: 1rem;line-height: 0;}
 /* .imageDisplay:target{display: block;} Actually no I'm not doing this. Shoutout to sira0xff.netlify.app go look at the arts there. Wait shouldn't I like put a button for this and not hide it in the code. Is there a button?*/
 .imageDisplay div:nth-child(2){max-width: 90%;min-width: 80%;border: 5px solid #042f41;
 max-height: 95%;overflow: scroll;}
@@ -118,7 +121,7 @@ max-height: 95%;overflow: scroll;}
 background-color: #dbf4e5;color: #000;}
 .art-grid > div{break-inside: avoid;}
 .art-grid p{margin-top: 0.5rem;display: block;break-inside: avoid;}
-.art-grid img{border-bottom: 2px solid #0b4951;}
+.art-grid img{border-bottom: 2px solid #0b4951;line-height: 0;}
 
 /* info boxes */
 /* #characterList>article{background-color:;} */
@@ -137,7 +140,8 @@ background-color: #dbf4e5;color: #000;}
 /* ---- */
 @media screen and (min-width:640px){
     /* .containment{margin: 0 5%;} */
-    header{float: left;max-height: fit-content;flex-direction: column;}
+    /* header{max-height: fit-content;flex-direction: row;} */
+    header nav{flex-flow: row;gap: 1rem;}
     .grid-4-6{display: grid;grid-template-columns: 4fr 6fr;}
     .art-grid{columns: 1;}
     .imageDisplay div:nth-child(2){min-width: 70%;}
@@ -151,7 +155,7 @@ background-color: #dbf4e5;color: #000;}
 }
 
 @media (prefers-reduced-motion) {
-    nav a,.peoplebox a,.art-grid a{transition-duration:0;}
+    nav a,.peoplebox a,.art-grid a{transition-duration:0s;}
     nav a:hover,.peoplebox a:hover,.art-grid a:hover{transform: none;
     animation: none;}
     nav a:active,.peoplebox a:active,.art-grid a:active{transform: none;}
