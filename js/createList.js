@@ -27,7 +27,7 @@ const getDescriptions = () => {
             "name": "SC-4V",
             "image": "../images/sluggy.png",
             "bio": ["Skittish Survivor", "They/She", "alternatively Essie :}"],
-            "description": ["10% robot. 90% rocks and trinkets and scrap and spare limbs <sub>and</sub>","They are a big hoarding fan, though they do still use the baubles and items they collect... but usually only when just running away isn't an option. Collects robot limbs, either salvaged from refuse or stolen from robots who are too busy being dead to care.","If you cut off their limbs then more limbs will sprout out. Like a hydra whose severed heads also sprout heads."]
+            "description": ["10% robot. 90% rocks and trinkets and scrap and spare limbs <sub>and</sub>","They are a big hoarding fan, though they do still use the baubles and items they collect... but usually only when just running away isn't an option. Collects robot limbs, either salvaged from refuse or stolen from robots who are too busy being dead to care.","Slowly becoming more and more of a prick as I put them in situations. She <em>is</em> stealing anything not nailed down from the building MOOK and co. live in."]
         },
         {
             "characterID": 2,
@@ -44,8 +44,8 @@ const getDescriptions = () => {
             "location":"depths",
             "name": "Ieda",
             "image": "../images/sluggy.png",
-            "bio": ["Horticultural ???", "She/They"],
-            "description": ["Menace to society. Hunts big creatures to hand over to cordysects. Full of plants, explosive either in growth or in actual destructive power."]
+            "bio": ["Botanical ???", "She/They"],
+            "description": ["Horticultural menace. Full of plants, explosive either in growth or in actual destructive power."]
         },
         {
             "characterID": 4,
@@ -54,7 +54,7 @@ const getDescriptions = () => {
             "name": "Avo",
             "image": "../images/sluggy.png",
             "bio": ["??? ???", "Copies Iedas pronouns (She/They)"],
-            "description": ["A fiend that accidentally fell into the depths after wandering off from her hive for a moment. Her partnership with Ieda and the resulting vast amount of free meal allowed them to grow larger than a standard fiend would be able to. She could mitose into a proper fiend hive at any time, but being a (relatively) Big Creature is more fun for them."]
+            "description": ["A fiendthing that accidentally fell into the depths after wandering off from her hive for a moment. Her partnership with Ieda and the resulting vast amount of Free Meal allowed them to grow larger than a standard fiend would be able to. She could mitose into a proper fiend hive at any time, but being a (relatively) Big Creature is more fun for them."]
         },
         {
             "characterID": 5,
@@ -63,7 +63,7 @@ const getDescriptions = () => {
             "name": "Advanced Incredible Exuberant Edifice",
             "image": "../images/sluggy.png",
             "bio": ["No Pronouns"],
-            "description": ["Big disorganized building with a hobby of trying to find answers without asking any questions. An 'Annie E' acts as an intermediary between AIEE and other people, primarily sending commands to MOOKs, though it is unclear whether or not this intermediary is a separate entity or just the building."]
+            "description": ["Big disorganized building with a hobby of trying to find answers without asking any questions. An 'Annie Indigo Edwardson Esquire' acts as an intermediary between AIEE and other people, primarily sending commands to MOOKs, though it is unclear whether or not this intermediary is a separate entity or just the building."]
         },
         {
             "characterID": 6,
@@ -71,8 +71,8 @@ const getDescriptions = () => {
             "location":"depths",
             "name": "MOOK",
             "image": "../images/sluggy.png",
-            "bio": ["Exhausted Exterminator"],
-            "description": ["Relentess hunter created by AIEE, now relegated to teaching new MOOKs to act more like itself. They dislike all of them. ","Hoards sick-days, spending them immediately when they see a trespasser within skull-crushing distance."]
+            "bio": ["Exhausted Exterminator","If you're part of the building bozos, any pronouns fine."],
+            "description": ["Relentess hunter created by AIEE, now relegated to teaching new MOOKs to fill its old role. It's not going as quick as he would like.","Misses the old days (all 2 of them) when she was allowed to destroy people for fun."]
         },
         {
             "characterID": 7,

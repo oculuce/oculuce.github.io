@@ -12,9 +12,9 @@ do shift+alt+F */
 
 @keyframes buttonRotate{
     0%{transform:rotate(0deg);}
-    25%{transform:rotate(0.3deg) scale(1.05) perspective(1px);}
-    75%{transform:rotate(-0.3deg) scale(1.05) perspective(1px);}
-    100%{transform:rotate(0deg) scale(1.05) perspective(1px);}
+    25%{transform:rotate(0.3deg) scale(1.01) perspective(1px);}
+    75%{transform:rotate(-0.3deg) scale(1.01) perspective(1px);}
+    100%{transform:rotate(0deg) scale(1.01) perspective(1px);}
 }
 
 .show-block{display: block !important;}
@@ -60,7 +60,7 @@ header nav{display: flex;flex-direction: column;justify-content: center;
 align-items: center;}
 header nav a{width: 13ch;}
 
-nav a,button{font-size: 1rem;padding: 0.45rem;background-color: #000;
+nav a,button,.button{font-size: 1rem;padding: 0.45rem;background-color: #000;
 margin: 0.25rem 0;color: #fff;border:3px solid var(--light-green-margin);
 border-color: var(--light-green-margin) var(--dark-green-margin) var(--dark-green-margin) var(--light-green-margin);cursor: pointer;
 }
@@ -70,9 +70,9 @@ nav a:active,button:active{background-color: #0b4951;color: #a9d5c4;
     
     }
 nav a,.peoplebox a,.art-grid a{transition-duration:0.1s;}
-nav a:hover,.peoplebox a:hover,.art-grid a:hover{transform: scale(1.05) perspective(1px);
+nav a:hover,.peoplebox a:hover,.art-grid a:hover{transform: scale(1.01) perspective(1px);
     animation: buttonRotate 0.2s;}
-nav a:active,.peoplebox a:active,.art-grid a:active{transform: scale(0.95) perspective(1px);}
+nav a:active,.peoplebox a:active,.art-grid a:active{transform: scale(0.99) perspective(1px);}
 
 main{/* background-color: #2e4d49; */padding: 2rem 1rem;
 display: flex;flex-wrap: wrap;}
@@ -116,14 +116,15 @@ max-height: 95%;overflow: scroll;}
 /* .force-height{min-width: 0% !important;}
 .force-height img{height: 90vh;} */
 
-.art-grid a{width: 100%;margin: 0;break-inside: avoid;margin-bottom: 1rem;
-    text-align: center;display: block;border: 2px solid #0b4951;
-background-color: #dbf4e5;color: #000;}
-.art-grid > a{line-height: 0}
+.art-grid div > a{width: 100%;margin: 0;break-inside: avoid;
+    display: block;}
+.art-grid div > a{line-height: 0}
 .art-grid *{line-height: 1.2}
-.art-grid > div{break-inside: avoid;}
-.art-grid p{margin-top: 0.5rem;display: block;break-inside: avoid;}
-.art-grid img{border-bottom: 2px solid #0b4951;line-height: 0;}
+.art-grid > div{break-inside: avoid;background-color: #dbf4e5;border: 2px solid #0b4951;
+    margin-bottom: 1rem;text-align: center;}
+.art-grid p{margin-top: 0.5rem;display: block;break-inside: avoid;margin-top: 1rem;}
+.art-grid .button{width: fit-content;margin: 0 auto;}
+/* .art-grid img{border-bottom: 2px solid #0b4951;line-height: 0;} */
 
 /* info boxes */
 /* #characterList>article{background-color:;} */
