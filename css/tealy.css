@@ -74,8 +74,7 @@ nav a:hover,.peoplebox a:hover,.art-grid a:hover{transform: scale(1.01) perspect
     animation: buttonRotate 0.2s;}
 nav a:active,.peoplebox a:active,.art-grid a:active{transform: scale(0.99) perspective(1px);}
 
-main{/* background-color: #2e4d49; */padding: 2rem 1rem;
-display: flex;flex-wrap: wrap;}
+main{/* background-color: #2e4d49; */padding: 2rem 1rem;display: flex;flex-wrap: wrap;min-height: 100dvh;}
 
 article{background-color: #b6e4ca;padding: 1rem;margin: 0.5rem;
     border:#00000000 20px solid;border-radius:3px;
