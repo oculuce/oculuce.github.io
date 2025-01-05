@@ -12,12 +12,14 @@
 <body background="../images/griddy/greenyDot.png">
     <header>
         <div class="containment">
-            <div class="header-icon"><img height="150" src="../images/sluggy.jpg"></div>
+            <a href="..">
+                <div class="header-icon"><img height="150" src="../images/icons/arting-thing.png"></div>
+            </a>
             <nav>
-                <a href="../index.html">main</a>
-                <a href="../aboutMe/index.html">about</a><!-- interests and info -->
+                <a href="..">main</a>
+                <a href="../aboutMe">about</a><!-- interests and info -->
                 <a href="#">art</a>
-                <a href="../infoDump/index.html">characters</a>
+                <a href="../infoDump">characters</a>
             </nav>
         </div>
     </header>
@@ -318,19 +320,19 @@
                         <div><a target="_blank" href="../images/art/doodleboards/doodleboard14.png"><img loading="lazy" src="../images/art/doodleboards/doodleboard14_preview.jpg"></a></div>
                         <div><a target="_blank" href="../images/art/doodleboards/doodleboard15.png"><img loading="lazy" src="../images/art/doodleboards/doodleboard15_preview.jpg"></a></div>
                         <div>
-                            <p>This one comes with <a href="../images/art/doodleboards/doodleboard15_timeslop.png" target="_blank">a second one with datestamps on them</a> Feb 3 - May 29 2024. made it back to red after, uh, 4 years? i think? when did...</p>
+                            <p>This one comes with <a class="button" href="../images/art/doodleboards/doodleboard15_timeslop.png" target="_blank">a second one with datestamps on them</a> Feb 3 - May 29 2024. made it back to red after, uh, 4 years? i think? when did...</p>
                         </div>
                         <div><a target="_blank" href="../images/art/doodleboards/doodleboard16.png"><img loading="lazy" src="../images/art/doodleboards/doodleboard16_preview.png"></a></div>
                         <div>
-                            <p>This one has a <a href="../images/art/doodleboards/doodleboard16_timeslop.png" target="_blank">vaguely timestamped alternate.</a></p>
+                            <p>This one has a <a class="button" href="../images/art/doodleboards/doodleboard16_timeslop.png" target="_blank">vaguely timestamped alternate.</a></p>
                         </div>
                         <div><a target="_blank" href="../images/art/doodleboards/doodleboard17.png"><img loading="lazy" src="../images/art/doodleboards/doodleboard17_preview.png"></a></div>
                         <div>
-                            <p>This one has a <a href="../images/art/doodleboards/doodleboard17_timeslop.png" target="_blank">minimally timestamped alternate.</a></p>
+                            <p>This one has a <a class="button" href="../images/art/doodleboards/doodleboard17_timeslop.png" target="_blank">minimally timestamped alternate.</a></p>
                         </div>
                         <div><a target="_blank" href="../images/art/doodleboards/doodleboard18.png"><img loading="lazy" src="../images/art/doodleboards/doodleboard18_preview.png"></a></div>
                         <div>
-                            <p>This one has a <a href="../images/art/doodleboards/doodleboard18_timeslop.png" target="_blank">timestamped alternate.</a></p>
+                            <p>This one has a <a class="button" href="../images/art/doodleboards/doodleboard18_timeslop.png" target="_blank">timestamped alternate.</a></p>
                         </div>
                     </div>
                 </article>
@@ -372,15 +374,17 @@
         </article>
     </div>
     <div class="imageDisplay" id="imageDisplay">
-        <div class="backButton">
-            <!--         -->
+        <div class="close-button button" id="closeButton">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+              </svg>              
         </div>
         <div>
             <img id="imageContainer" src="../../images/sluggy.jpg">
         </div>
-        <div class="forwardButton">
+        <!-- <div class="forwardButton"> -->
             <!--         -->
-        </div>
+        <!-- </div> -->
     </div>
 </body>
 </html>

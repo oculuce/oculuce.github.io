@@ -15,11 +15,12 @@ let image = detectLink.querySelectorAll('a')
 
 let imageDisplay = document.querySelector('.imageDisplay')
 let imageContainer = document.querySelector('#imageContainer')
+let closeButton = document.querySelector('#closeButton')
 const detectImage =()=>{
     image.forEach((element)=>{
         element.addEventListener("click",(event)=>{
             // console.log(element.href.startsWith('https'))
-            if (element.href == null || element.href.startsWith('https://artfight') == true){
+            if (element.href == null || element.href.includes('images/art') == false){
                 return
             } else {
             event.preventDefault()
@@ -31,7 +32,7 @@ const detectImage =()=>{
     })
 }
 detectImage()
-imageDisplay.addEventListener("click",(/* event */)=>{
+closeButton.addEventListener("click",(/* event */)=>{
     imageDisplay.classList.remove('show-flex')
 })
 /* let gungus = 5
