@@ -296,7 +296,7 @@ window.addEventListener("load", (event) => {
           id: "funfriend",
           actor: "proxyfriend",
           size: "75px",
-          img: "https://anchovii.github.io/images/unfunfriend.png",
+          img: "https://oculuce.github.io/images/unfunfriend.png",
           classes: "funfriend",
       },
   
@@ -308,7 +308,7 @@ window.addEventListener("load", (event) => {
   document.body.insertAdjacentHTML('beforeend', `
   <style>
   .buddy {
-      --buddyimg: url(https://anchovii.github.io/images/unfunfriend.png);
+      --buddyimg: url(https://oculuce.github.io/images/unfunfriend.png);
       --offsetX: 50vw;
       --offsetY: 50vh;
       --size: 75px;
