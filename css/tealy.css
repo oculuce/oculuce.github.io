@@ -104,11 +104,11 @@ img{width: 100%;}
 .effigy{cursor: pointer !important;}
 
 /* art page */
-.imageDisplay{background-color: #00000070;position: fixed;width: 100%;
+.imageDisplay{background-color: #000000ae;position: fixed;width: 100%;
     height: 100%;top:0;display: none;justify-content: center;
-align-items: center;padding: 1rem;line-height: 0;flex-flow: column;}
+align-items: center;line-height: 0;flex-flow: column;}
 /* .imageDisplay:target{display: block;} Actually no I'm not doing this. Shoutout to sira0xff.netlify.app go look at the arts there. Wait shouldn't I like put a button for this and not hide it in the code. Is there a button?*/
-.imageDisplay div:nth-child(2){max-width: 90%;min-width: 80%;border: 5px solid var(--navy);
+.display-image{max-width: 90%;min-width: 80%;border: 5px solid var(--navy);
 max-height: 95%;overflow: scroll;}
 .imageDisplay img{max-width: 100%;background-color: #0000006c;}
 .close-button{color: #fff;width: 3rem;top:1rem;left:1rem;position: absolute;user-select: none;}
@@ -149,6 +149,8 @@ max-height: 95%;overflow: scroll;}
     header nav{flex-flow: row;gap: 1rem;}
     .grid-4-6{display: grid;grid-template-columns: 4fr 6fr;}
     /* .art-grid{columns: 1;} */
+
+    .imageDisplay{padding: 1rem;}
     .imageDisplay div:nth-child(2){min-width: 70%;}
 }
 @media screen and (min-width: 750px){
