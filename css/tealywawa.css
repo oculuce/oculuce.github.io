@@ -14,7 +14,7 @@ img:before {
     content: ' ';
     display: block;
     position: absolute;
-    background-image: url(../../images/sluggy.png);
+    background-image: url(//images/sluggy.png);
 } */
 
 
@@ -22,7 +22,7 @@ img:before {
 
 article,.hide{background-color:#c2eed5;padding: 10px;
     border:#00000000 20px solid;border-radius:3px;
-    border-image:url(../images/griddy/borderwawa.png)30 round;}
+    border-image:url(/images/griddy/borderwawa.png)30 round;}
 article>article{background-color:#a1d1b6;}
             /* colour schemes */
             .vermilliwrong,.vermilliwrong .hide{background-color: #ecccd8;border-image: none;} /*none for now!*/
