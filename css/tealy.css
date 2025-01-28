@@ -78,7 +78,7 @@ main{/* background-color: #2e4d49; */padding: 2rem 1rem;display: flex;flex-wrap:
 
 article{background-color: #b6e4ca;padding: 1rem;margin: 0.5rem;
     border:#00000000 20px solid;border-radius:3px;
-    border-image:url(/images/griddy/borderwawa.png)30 round;}
+    border-image:url(../images/griddy/borderwawa.png)30 round;}
 article>article{background-color: #a9d5c4;padding: 0.5rem;}
     /* articolours */
 
