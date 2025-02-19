@@ -4,6 +4,11 @@ do shift+alt+F */
 
 /* variables */
 /* --------- */
+@font-face {
+    font-family: oculuce-handwriting;
+    src: url(../fonts/oculuce-handwriting.ttf);
+}
+
 :root{
     --teal:#46899f;
     --dark-green-margin:#335f44;
@@ -30,6 +35,7 @@ h2{margin-bottom: 1rem;font-weight: bolder;font-size: 1.8rem;}
 h3{font-size: 1.4rem;text-decoration: underline;margin-bottom: 0.5rem;}
 h4{font-size: 1.2rem;margin-bottom: 0.5rem;}
 
+h1,h2,h3,h4,h5,h6{font-family:"oculuce-handwriting",monospace}
 /* encompassing and descending */
 /* --------------------------- */
 html{box-sizing: content-box;}

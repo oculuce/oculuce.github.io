@@ -15,9 +15,9 @@ document.addEventListener("scroll", () => {
     console.log(ceilingDistance)
     let floorDistance = floorElement.getBoundingClientRect().top - window.innerHeight / 2
     // console.log(floorDistance)
-    let alteredCeilingVariable = 180 - (ceilingDistance / 4)
+    let alteredCeilingVariable = (0 - 45) - (100 / ceilingDistance)
     changeStyle('--ceiling-rotate',alteredCeilingVariable + 'deg')
-    let alteredFloorVariable = 180 - (floorDistance / 4)
+    let alteredFloorVariable = 45 + (100 / floorDistance)
     changeStyle('--floor-rotate',alteredFloorVariable + 'deg')
 })
 
