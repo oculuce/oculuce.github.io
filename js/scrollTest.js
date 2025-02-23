@@ -12,12 +12,16 @@ document.addEventListener("scroll", () => {
     // let scrollDistance = caveElement.getBoundingClientRect().top
     // console.log(scrollDistance)
     let ceilingDistance = ceilingElement.getBoundingClientRect().top - window.innerHeight / 2
-    console.log(ceilingDistance)
+    let ceilingDistance2 = ceilingElement.getBoundingClientRect().top - window.innerHeight
+    // console.log(ceilingDistance)
     let floorDistance = floorElement.getBoundingClientRect().top - window.innerHeight / 2
+    let floorDistance2 = floorElement.getBoundingClientRect().top - window.innerHeight
+    console.log(floorDistance)
+    
     // console.log(floorDistance)
-    let alteredCeilingVariable = (0 - 45) - (100 / ceilingDistance)
+    let alteredCeilingVariable = (-100) * (ceilingDistance / ceilingDistance2)
     changeStyle('--ceiling-rotate',alteredCeilingVariable + 'deg')
-    let alteredFloorVariable = 45 + (100 / floorDistance)
+    let alteredFloorVariable = 100 / (floorDistance / floorDistance2)
     changeStyle('--floor-rotate',alteredFloorVariable + 'deg')
 })
 
