@@ -107,11 +107,11 @@ const renderDescriptions = () => {
         let description = character.description
         
         descriptionArea.insertAdjacentHTML('beforeend',`
-        <article class="${colourScheme}" id="${charID}">
+        <section class="${colourScheme}" id="${charID}">
             <div class="biobar"><img src="${image}"><li>${name}</li></div>
             <div class="description">
             </div>
-        </article>`)
+        </section>`)
             
         appendInfo(character, charID, descriptionArea)
         

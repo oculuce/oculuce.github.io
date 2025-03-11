@@ -82,10 +82,10 @@ nav a:active,.peoplebox a:active,.art-grid a:active,.header-icon:active{transfor
 
 main{/* background-color: #2e4d49; */padding: 2rem 1rem;display: flex;flex-wrap: wrap;min-height: 100dvh;}
 
-article{background-color: #b6e4ca;padding: 1rem;margin: 0.5rem;
+section{background-color: #b6e4ca;padding: 1rem;margin: 0.5rem;
     border:#00000000 20px solid;border-radius:3px;
     border-image:url(/images/griddy/borderwawa.png)30 round;}
-article>article{background-color: #a9d5c4;padding: 0.5rem;}
+section>section{background-color: #a9d5c4;padding: 0.5rem;}
     /* articolours */
 
 img{width: 100%;}
@@ -135,7 +135,7 @@ max-height: 95%;overflow: scroll;}
 .art-grid img{object-fit: cover;min-height: 120px;}
 
 /* info boxes */
-/* #characterList>article{background-color:;} */
+/* #characterList>section{background-color:;} */
 .biobar{list-style-type: none;display:flex;gap:10px;flex-wrap:wrap;align-items: center;}
 .biobar li{font-size: 1.5rem;font-weight: bold;background-color:#dff1ea;padding:15px;border-radius:5px;
     text-decoration: none;}
