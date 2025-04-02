@@ -5,13 +5,25 @@
 }
 /*  */
 body{background-color: #340518;}
-.container{max-width: 1000px;margin: 0 auto;background-color: #eee;}
+ul{list-style-type: none}
+.container{max-width: 1000px;margin: 0 auto;background-color: #eee;position: relative;transform-style: preserve-3d;}
+.container::after{content: "";background-color: #00000070;position: absolute;top: 0;left: 0;width: 100%;height: 100%;background-size: cover;
+z-index: -1; transform: translateZ(-1px);}
+
 /*  */
 .cave-test{background-color: #000;perspective: 350px;overflow: hidden;}
 .floor, .ceiling{border: 20px #fff solid;height: 300px;}
+
 /* transform-style: preserve-3d; */
 .ceiling{transform:perspective(300px) rotateX(var(--ceiling-rotate)) translateZ(-100px);}
 .floor{transform:perspective(300px) rotateX(var(--floor-rotate)) translateZ(100px);display: flex;}
 .floor > div{transform: perspective(200px) rotateX(calc(var(--floor-rotate) / -1));}
+
+/*  */
+.custom-button{transition: 0.25s ease-in;position: relative;padding: 0.5rem;background-color: #ff0066;transform: translatey(-10px);}
+.whatever{height: 20px;background-color: #940b42;width: fit-content;padding-bottom: 1rem;}
+.custom-button:active, .whatever:active .custom-button{transform: translateY(0);}
+
+
 /*  */
 .filler{height: 600px;}
