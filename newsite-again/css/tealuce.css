@@ -84,6 +84,15 @@ nav a:active{background-color: #0b4951;color: #a9d5c4;
 
 section{border: 3px #00000000 solid;border-bottom-color: #3dd5c678;
     padding: 1rem;margin: 0.5rem;}
+/* 
+.custom-button{transition: 0.25s ease-in;position: relative;padding: 0.5rem;background-color: #ff0066;transform: translatey(-6px);}
+.whatever{height: 20px;background-color: #940b42;width: fit-content;padding-bottom: 1rem;cursor: pointer;}
+.custom-button:active, .whatever:active .custom-button{transform: translateY(0);}
+.custom-button{transition: 0.25s ease-in;position: relative;padding: 0.5rem;background-color: #ff0066;transform: translatey(-6px);}
+.custom-button-bottom{height: 20px;background-color: #940b42;width: fit-content;padding-bottom: 1rem;cursor: pointer;}
+.custom-button:active, .custom-button-bottom:active .custom-button{transform: translateY(0);}
+*/
+
 
 /* colorthings */
 /* ----------- */
