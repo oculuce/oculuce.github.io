@@ -92,6 +92,72 @@ section{border: 3px #00000000 solid;border-bottom-color: #3dd5c678;
 .custom-button-bottom{height: 20px;background-color: #940b42;width: fit-content;padding-bottom: 1rem;cursor: pointer;}
 .custom-button:active, .custom-button-bottom:active .custom-button{transform: translateY(0);}
 */
+/* ======== 3D Buttons ========
+BUTTON TEMPLATES:
+<a href="#" class="no-decoration"><div class="custom-button-bottom"><div class="custom-button">Book Now</div></div></a>
+<a href="#" class="no-decoration"><div class="custom-button-bottom yellow-colors"><div class="custom-button">Book Now</div></div></a>
+<a href="#" class="no-decoration"><div class="custom-button-bottom blue-colors"><div class="custom-button">Book Now</div></div></a>
+ */
+
+.no-decoration {text-decoration: none;margin: 1rem 0;display: block;width: fit-content;}
+.max-margin-left {margin-left: auto;}
+  
+.custom-button {transition: 0.07s ease-in;position: relative;padding: 10px 16px;
+  background: linear-gradient(var(--third-color-grey));transform: translatey(-6px);border-radius: 8px;
+  color: var(--text-color-light);font-family: "League Spartan", sans-serif;font-size: 1.2rem;
+  font-weight: 500;text-decoration: none;text-transform: uppercase;}
+
+.custom-button-bottom {min-width: 15ch;text-align: center;transition: 0.07s ease-in;
+  background: linear-gradient(#00000090),  linear-gradient(var(--third-color-grey));
+  width: fit-content;cursor: pointer;border-radius: 8px;box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.381);}
+
+.custom-button:hover {background: linear-gradient(#ffffff25), no-repeat,linear-gradient(var(--third-color-grey));}
+.custom-button-bottom:hover {background: linear-gradient(#00000020),linear-gradient(var(--third-color-grey));}
+
+.custom-button:active,.custom-button-bottom:active .custom-button {transform: translateY(0);}
+
+.custom-button-bottom:active {box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.381);}
+
+.blue-colors .custom-button {
+  background: url(images/svg/blue-button-paw.svg) no-repeat,
+    linear-gradient(var(--primary-color));
+  color: var(--text-color-light);
+}
+
+.custom-button-bottom.blue-colors {
+  background: linear-gradient(#00000047), linear-gradient(var(--primary-color));
+}
+
+.blue-colors .custom-button:hover {
+  background: linear-gradient(#ffffff10),
+    url(images/svg/blue-button-paw.svg) no-repeat,
+    linear-gradient(var(--primary-color));
+}
+.custom-button-bottom.blue-colors:hover {
+  background: linear-gradient(#00000030), linear-gradient(var(--primary-color));
+}
+
+.yellow-colors .custom-button {
+  background: url(images/svg/orange-button-paw.svg) no-repeat,
+    linear-gradient(var(--secondary-color));
+  color: var(--third-color-darkest);
+}
+
+.custom-button-bottom.yellow-colors {
+  background: linear-gradient(#0000006c),
+    linear-gradient(var(--secondary-color));
+}
+
+.yellow-colors .custom-button:hover {
+  background: linear-gradient(#ffffff25),
+    url(images/svg/orange-button-paw.svg) no-repeat,
+    linear-gradient(var(--secondary-color));
+}
+.custom-button-bottom.yellow-colors:hover {
+  background: linear-gradient(#00000020),
+    linear-gradient(var(--secondary-color));
+}
+  
 
 
 /* colorthings */
@@ -99,7 +165,7 @@ section{border: 3px #00000000 solid;border-bottom-color: #3dd5c678;
 .metal-green{background-color: #b6e4ca;padding: 1rem;margin: 0.5rem;
     border:#00000000 20px solid;border-radius:3px;
     border-image:url(/images/griddy/borderwawa.png)30 round;color: #000;}
-.fiendlet-red{background-color: #c49eaf;color: #000;border-color: #ff0066;border-radius: ;}
+.fiendlet-red{background-color: #c49eaf;color: #000;border-color: #ff0066;border-radius: 4px;}
 
 /* flex world */
 /* ---------- */
