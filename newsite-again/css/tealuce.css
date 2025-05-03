@@ -55,7 +55,7 @@ header{padding: 1rem;margin: 18px 0;
     box-shadow: 
         0 3px 0 0 #a7e2d6, 0 10px 0 0 #87c0b5, 0 15px 0 0 #568a77, 0 18px 0 0 #2d421a,
         0 -3px 0 0 #2d421a, 0 -10px 0 0 #568a77, 0 -15px 0 0 #87c0b5, 0 -18px 0 0 #a7e2d6}
-.header-portrait{width: 150px;}
+.header-portrait{height: 150px;aspect-ratio: 1/1;}
 header .containment{display: flex;justify-content: space-between;align-items: center;}
 header nav ul{display: flex;flex-flow: wrap column;margin: 0;}
 header nav a{min-width: calc(10ch + 6px);}
