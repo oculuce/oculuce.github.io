@@ -45,7 +45,7 @@ html{box-sizing: content-box;}
 nav{display: flex;flex-flow: column;}
 
 body{margin: 0;font-family: monospace;font-size: 1.5rem;background-color: #1d0534;}
-body > .containment{background-color:#10675d;
+body > .containment{background-color:#10675d;padding: 0.5rem;
     background: linear-gradient(180deg, #10675dbe 40%, #05222d00 95%);box-shadow: 
     3px 0 0 0 #a7e2d6, 10px 0 0 0 #87c0b5, 17px 0 0 0 #568a77, 20px 0 0 0 #2d421a,
     -3px 0 0 0 #2d421a, -10px 0 0 0 #568a77, -17px 0 0 0 #87c0b5, -20px 0 0 0 #a7e2d6}
@@ -77,15 +77,15 @@ img{width: 100%;box-sizing:border-box}
 img{-ms-interpolation-mode:nearest-neighbor;image-rendering:-webkit-optimize-contrast;image-rendering:-moz-crisp-edges;image-rendering:-o-pixelated;image-rendering:pixelated;}
 
 /* button things yes */
-nav a, .header-portrait{padding: 0.45rem;margin: 0.25rem 0;background-color: #000;color: #fff;
+nav a, .header-portrait, .buttonifier a{padding: 0.45rem;margin: 0.25rem 0;background-color: #000;color: #fff;
     border:3px solid;cursor: pointer;
 border-color: var(--light-green-margin) var(--dark-green-margin) var(--dark-green-margin) var(--light-green-margin);}
-nav a:hover, .header-portrait:hover{background-color: var(--navy);}
-nav a:active, .header-portrait:active{background-color: #0b4951;color: #a9d5c4;
+nav a:hover, .header-portrait:hover, .buttonifier a:hover{background-color: var(--navy);}
+nav a:active, .header-portrait:active, .buttonifier a:active{background-color: #0b4951;color: #a9d5c4;
     border-color: var(--dark-green-margin) var(--light-green-margin) var(--light-green-margin) var(--dark-green-margin);}
 
 nav li{list-style-type: none;display: flex;}
-nav a{font-size: 1.2rem;}
+nav a, .buttonifier a{font-size: 1.2rem;}
 
 /* link animation */
 
@@ -202,3 +202,7 @@ BUTTON TEMPLATES:
 /* main page */
 .other-links{display: flex;flex-flow: wrap;}
 .other-links a img{max-width: 100px;}
+
+/* about ME! */
+.interests div{display: flex;flex-flow: column;}
+.interests a{width: fit-content;}
