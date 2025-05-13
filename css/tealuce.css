@@ -10,16 +10,24 @@
 
 :root{
     --teal:#46899f;
+    --navy:#042f41;
     --dark-green-margin:#335f44;
     --light-green-margin:#9ed7d0;
-    --navy:#042f41;
+    --green-background:#b6e4ca;
+    --light-green-background:#f0fff5;
 }
 
-@keyframes buttonRotate{
+@keyframes button-rotate{
     0%{transform:rotate(0deg);}
     25%{transform:rotate(0.3deg) scale(1.01) perspective(1px);}
     75%{transform:rotate(-0.3deg) scale(1.01) perspective(1px);}
     100%{transform:rotate(0deg) scale(1.01) perspective(1px);}
+}
+@keyframes fear{
+    0%{transform:rotate(0deg);}
+    25%{transform:rotate(20deg) scale(1.01) perspective(5px);}
+    75%{transform:rotate(-20deg) scale(1.01) perspective(5px);}
+    100%{transform:rotate(0deg) scale(1.01) perspective(5px);}
 }
 
 .show-block{display: block !important;}
@@ -35,8 +43,11 @@ h3{font-size: 1.4rem;text-decoration: underline;margin-bottom: 0.5rem;}
 h4{font-size: 1.2rem;margin-bottom: 0.5rem;}
 
 h1,h2,h3,h4,h5,h6{font-family:"oculuce-handwriting",monospace}
+
+
 /* globalthings */
 /* ------------ */
+
 html{box-sizing: content-box;}
 *, *:before, *:after {
     box-sizing: inherit;
@@ -44,9 +55,10 @@ html{box-sizing: content-box;}
 
 nav{display: flex;flex-flow: column;}
 
-body{margin: 0;font-family: monospace;font-size: 1.5rem;background-color: #1d0534;}
+body{margin: 0;font-family: monospace;font-size: 1.5rem;background-color: #1d0534;
+background:url(../images/griddy/greenyDot.png) repeat, linear-gradient(#1d0534);}
 body > .containment{background-color:#10675d;padding: 0.5rem;
-    background: linear-gradient(180deg, #10675dbe 40%, #05222d00 95%);box-shadow: 
+    background: linear-gradient(180deg, #08665bbf 40%, #05222d00 95%);box-shadow: 
     3px 0 0 0 #a7e2d6, 10px 0 0 0 #87c0b5, 17px 0 0 0 #568a77, 20px 0 0 0 #2d421a,
     -3px 0 0 0 #2d421a, -10px 0 0 0 #568a77, -17px 0 0 0 #87c0b5, -20px 0 0 0 #a7e2d6}
 
@@ -77,11 +89,17 @@ img{width: 100%;box-sizing:border-box}
 img{-ms-interpolation-mode:nearest-neighbor;image-rendering:-webkit-optimize-contrast;image-rendering:-moz-crisp-edges;image-rendering:-o-pixelated;image-rendering:pixelated;}
 
 /* button things yes */
-nav a, .header-portrait, .buttonifier a{padding: 0.45rem;margin: 0.25rem 0;background-color: #000;color: #fff;
+nav a, .header-portrait, .buttonifier a,
+.art-grid > div p a, .buttonifier button
+{padding: 0.45rem;margin: 0.25rem 0;background-color: #000;color: #fff;
     border:3px solid;cursor: pointer;
 border-color: var(--light-green-margin) var(--dark-green-margin) var(--dark-green-margin) var(--light-green-margin);}
-nav a:hover, .header-portrait:hover, .buttonifier a:hover{background-color: var(--navy);}
-nav a:active, .header-portrait:active, .buttonifier a:active{background-color: #0b4951;color: #a9d5c4;
+nav a:hover, .header-portrait:hover, .buttonifier a:hover,
+.art-grid > div p a:hover, .buttonifier button:hover
+{background-color: var(--navy);}
+nav a:active, .header-portrait:active, .buttonifier a:active,
+.art-grid > div p a:active, .buttonifier button:active
+{background-color: #0b4951;color: #a9d5c4;
     border-color: var(--dark-green-margin) var(--light-green-margin) var(--light-green-margin) var(--dark-green-margin);}
 
 nav li{list-style-type: none;display: flex;}
@@ -89,7 +107,7 @@ nav a, .buttonifier a{font-size: 1.2rem;}
 
 /* link animation */
 
-a:hover{transform: scale(1.01) perspective(1px);animation: buttonRotate 0.2s;}
+a:hover{transform: scale(1.01) perspective(1px);animation: button-rotate 0.2s;}
 a:active{transform: scale(0.99) perspective(1px);}
 
 section{border: 3px #00000000 solid;border-bottom-color: #3dd5c678;
@@ -170,12 +188,14 @@ BUTTON TEMPLATES:
   
  */
 
+
 /* colorthings */
 /* ----------- */
-.metal-green{background-color: #b6e4ca;padding: 1rem;margin: 0.5rem;
+.metal-green, .metal-green-all section{background-color: var(--green-background);padding: 1rem;margin: 0.5rem;
     border:#00000000 20px solid;border-radius:3px;
     border-image:url(/images/griddy/borderwawa.png)30 round;color: #000;}
 .fiendlet-red{background-color: #c49eaf;color: #000;border-color: #ff0066;border-radius: 4px;}
+
 
 /* flex world */
 /* ---------- */
@@ -183,26 +203,51 @@ BUTTON TEMPLATES:
 
 /* stupid */
 /* ------ */
+.squish{transition-duration:500ms;}
+.squish:hover{box-shadow:0px 0px 30px #ff0066 inset, 0px 10px 100px 50px #ff0066;animation: fear 0.2s infinite;}
 
-/* querythings */
-/* ----------- */
-
-@media screen and (min-width:640px){
-    .one-one{flex-flow: row;}
-    .one-one > *:first-child{flex-grow: 1;max-width: 20ch;}
-    .one-one > *:last-child{flex-grow: 3;}
-}
-@media screen and (min-width:830px){
-  header nav ul{gap: 1rem;flex-flow: wrap row;}
-}
 
 /* specific!!! */
 /* ----------- */
 
 /* main page */
-.other-links{display: flex;flex-flow: wrap;}
+.other-links{display: flex;flex-flow: wrap;justify-content: space-between;align-items: center;background-color: #ffffff51;padding: 1rem;border-radius: 5px;gap: 0.2rem;}
 .other-links a img{max-width: 100px;}
 
 /* about ME! */
 .interests div{display: flex;flex-flow: column;}
 .interests a{width: fit-content;}
+
+/* art page */
+.row-nav ul{display: flex;flex-flow: wrap;gap: 0 0.5rem;padding: 0;}
+
+.art-grid{}
+.art-grid > div{break-inside: avoid;background-color: var(--light-green-background);border: 2px var(--dark-green-margin) solid;
+margin-bottom: 1rem;display: flex;flex-flow: column;}
+.art-grid > div > div{padding: 0 1rem;}
+.art-grid > div p {margin-top: 1ch;}
+.art-grid > div p a{padding: 0;font-size: 1.1rem;display: inline-block;margin: 0;}
+
+
+.image-display{position: fixed;top: 0;width: 100%;height: 100%;background-color: #00000098;display: none;z-index: 100;}
+.image-display > div{display: flex;align-items: center;justify-content: space-between;margin: 1rem;height: 100%;}
+.image-display button{width: 50px;height: 50px;display: flex;position: absolute;top: 16px;margin-bottom: auto;}
+.image-display button:last-child{right: 16px;}
+.display-container{width: 90vh;overflow: scroll;max-height: 90vh;}
+.full-image-view{width: fit-content !important;}
+
+
+/* querythings */
+/* ----------- */
+
+@media screen and (min-width:640px){
+  .one-one{flex-flow: row;}
+  .one-one > *:first-child{flex-grow: 1;max-width: 20ch;}
+  .one-one > *:last-child{flex-grow: 3;}
+  .art-grid{columns: 2;}
+  .image-display button{position: relative;}
+}
+@media screen and (min-width:830px){
+  header nav ul{gap: 1rem;flex-flow: wrap row;}
+  .art-grid{columns: 3;}
+}
