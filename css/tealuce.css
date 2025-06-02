@@ -231,7 +231,7 @@ margin-bottom: 1rem;display: flex;flex-flow: column;}
 
 .image-display{position: fixed;top: 0;width: 100%;height: 100%;background-color: #00000098;display: none;z-index: 100;}
 .image-display > div{display: flex;align-items: center;justify-content: space-between;margin: 1rem;height: 100%;}
-.image-display button{width: 50px;height: 50px;display: flex;position: absolute;top: 16px;margin-bottom: auto;}
+.image-display button{width: 50px;height: 50px;display: flex;position: absolute;top: 16px;margin-bottom: auto;background-color: #090a49;}
 .image-display button:last-child{right: 16px;}
 .display-container{width: 90vh;overflow: scroll;max-height: 90vh;}
 .full-image-view{width: fit-content !important;}
