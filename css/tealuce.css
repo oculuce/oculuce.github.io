@@ -32,6 +32,7 @@
 
 .show-block{display: block !important;}
 .show-flex{display: flex !important;}
+.show-none{display: none !important;}
 
 /* text */
 /* ---- */
@@ -90,15 +91,15 @@ img{-ms-interpolation-mode:nearest-neighbor;image-rendering:-webkit-optimize-con
 
 /* button things yes */
 nav a, .header-portrait, .buttonifier a,
-.art-grid > div p a, .buttonifier button
+.art-grid > div p a, .buttonifier button, .button-texture
 {padding: 0.45rem;margin: 0.25rem 0;background-color: #000;color: #fff;
     border:3px solid;cursor: pointer;
 border-color: var(--light-green-margin) var(--dark-green-margin) var(--dark-green-margin) var(--light-green-margin);}
 nav a:hover, .header-portrait:hover, .buttonifier a:hover,
-.art-grid > div p a:hover, .buttonifier button:hover
+.art-grid > div p a:hover, .buttonifier button:hover, .button-texture:hover
 {background-color: var(--navy);}
 nav a:active, .header-portrait:active, .buttonifier a:active,
-.art-grid > div p a:active, .buttonifier button:active
+.art-grid > div p a:active, .buttonifier button:active, .button-texture:active
 {background-color: #0b4951;color: #a9d5c4;
     border-color: var(--dark-green-margin) var(--light-green-margin) var(--light-green-margin) var(--dark-green-margin);}
 
@@ -107,8 +108,8 @@ nav a, .buttonifier a{font-size: 1.2rem;}
 
 /* link animation */
 
-a:hover{transform: scale(1.01) perspective(1px);animation: button-rotate 0.2s;}
-a:active{transform: scale(0.99) perspective(1px);}
+a:hover, .button-texture:hover{transform: scale(1.01) perspective(1px);animation: button-rotate 0.2s;}
+a:active, .button-texture:active{transform: scale(0.99) perspective(1px);}
 
 section{border: 3px #00000000 solid;border-bottom-color: #3dd5c678;
     padding: 1rem;margin: 0.5rem;}
@@ -235,6 +236,14 @@ margin-bottom: 1rem;display: flex;flex-flow: column;}
 .image-display button:last-child{right: 16px;}
 .display-container{width: 90vh;overflow: scroll;max-height: 90vh;}
 .full-image-view{width: fit-content !important;}
+
+/* character page */
+.character-select{display: flex;gap: 1rem;justify-content: space-between;}
+.character-tag{display: flex;flex-flow: row;justify-content: center;align-items: center;gap: 1ch;user-select: none;}
+.character-tag img{width: 64px;}
+
+.character-info{display: none;flex-flow: column;}
+.character-info .close-button{width: 50px;}
 
 
 /* querythings */
