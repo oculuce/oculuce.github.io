@@ -23,7 +23,14 @@ const getCharacters = () => {
             "displayName": "Ieda",
             "characterImage": "sluggy.png",
             "tags": ["She/They", "Botanical Menace", "Droid"],
-            "description": ["Does it count as gardening if you mostly just plant seeds that grow horrifically fast in buildings for fun?","Almost constantly with Avo- her presence has substantially reduced incidents of seeds growing inside Ieda.","Has associated with Essie as siblings due to visual similarities. Essie does not know her."]
+            "description": ["Does it count as gardening if you mostly just plant seeds that grow horrifically fast in buildings for fun?","Almost constantly with Avo- her presence has substantially reduced incidents of seeds growing inside Ieda.","Has associated with Essie as siblings due to visual similarities. Essie is fine with this."]
+        },
+        {
+            "characterID": "avo",
+            "displayName": "Avo",
+            "characterImage": "sluggy.png",
+            "tags": ["Mirror Pronouns", "Weird Thing", "Greater Fiendling"],
+            "description": ["Big ol' fiendling. Tastes like meat broth, but mostly like severe burns.","Almost constantly with Ieda- her presence has substantially reduced the amount of biomatter Ieda has for her crops.","Feels extremely superior to Acaud due to being a lone fiendling, thriving all by herself'. Ieda's contribution to Avo's survival has been repeatedly pointed out by Acaud."]
         },
         {
             "characterID": "sc4v2",
