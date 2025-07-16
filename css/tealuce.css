@@ -238,7 +238,8 @@ margin-bottom: 1rem;display: flex;flex-flow: column;}
 .full-image-view{width: fit-content !important;}
 
 /* character page */
-.character-select{display: flex;gap: 1rem;justify-content: space-between;}
+.character-select{display: flex;gap: 1rem;justify-content: space-between;flex-flow: wrap;}
+.character-select>div{flex-grow: 1;}
 .character-tag{display: flex;flex-flow: row;justify-content: center;align-items: center;gap: 1ch;user-select: none;}
 .character-tag img{width: 64px;}
 
