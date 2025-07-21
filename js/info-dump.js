@@ -33,6 +33,20 @@ const getCharacters = () => {
             "description": ["Big ol' fiendling. Tastes like meat broth, but mostly like severe burns.","Almost constantly with Ieda- her presence has substantially reduced the amount of biomatter Ieda has for her crops.","Feels extremely superior to Acaud due to being a lone fiendling, thriving all by herself'. Ieda's contribution to Avo's survival has been repeatedly pointed out by Acaud."]
         },
         {
+            "characterID": "zylvezter",
+            "displayName": "Zylvester",
+            "characterImage": "sluggy.png",
+            "tags": ["She/He", "Exanimate Excavator", "Cordysect"],
+            "description": ["Super duper alive bug. His head fits perfectly into Essies concave face, therefore they are together.", "Has stolen and/or damaged the least amount of property from AIEE, as far as semi-regulars go."]
+        },
+        {
+            "characterID": "rustling",
+            "displayName": "Sneaky Robotthing",
+            "characterImage": "sluggy.png",
+            "tags": ["Umm", "Uhh", "Who is this"],
+            "description": ["I don't know anything thing about her aside from the fact they're Red, a Screen that slithers within AIEE, and loves staying out of sight. Probably wouldn't let anyone learn her name either.", "Second, smaller screen that displays a neat little flower, positioned at either of their upper corners.", "Occasionally trades with Essie and company, so long as none of AIEE's crew are nearby."]
+        },
+        {
             "characterID": "sc4v2",
             "displayName": "SC-4V (Essie) Two",
             "characterImage": "sluggy.png",
