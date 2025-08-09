@@ -267,3 +267,5 @@ margin-bottom: 1rem;display: flex;flex-flow: column;}
   header nav ul{gap: 1rem;flex-flow: wrap row;}
   .art-grid{columns: 3;}
 }
+
+.shimeji{width: inherit !important;}
