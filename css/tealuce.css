@@ -268,4 +268,4 @@ margin-bottom: 1rem;display: flex;flex-flow: column;}
   .art-grid{columns: 3;}
 }
 
-.shimeji{width: inherit !important;}
+.shimeji, .shimejiTINYMOTH {width: inherit !important;}
