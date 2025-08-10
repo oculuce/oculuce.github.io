@@ -1,0 +1,16 @@
+/* Cloud movement stuff peeled from jokzi ozo in corru.observer!!!! */
+@keyframes DRIFT {
+    0% { transform: translateX(0) var(--baseTransform) }
+    100% { transform:  translateX(-50%) var(--baseTransform) }
+}
+
+.layer{background-color: #000;content: "";position: fixed;top: 0;left: 0;width: 100%;height: 100%;z-index: -4;display: flex;justify-content: center;align-items: center;}
+.clouds{z-index: -2;}
+.clouds .upper{z-index: -1;}
+.clouds > ::after{content: "";background-image: url(../images/unfunfriend.png);width: 200%;height: 70%;display: block;position: absolute;
+    background-repeat: repeat-x;background-size: 50% 100%;top: 0;left:0;overflow: hidden;z-index: -2;
+--baseTransform:translateY(-25%) rotateY(1deg);transform: var(--baseTransform);
+animation: DRIFT 20s linear infinite;animation-duration:20s}
+
+.lower::after{top: unset;bottom: 0;--baseTransform:rotate(180deg) translateY(0%);
+animation-duration:40s}
