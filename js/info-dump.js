@@ -19,6 +19,13 @@ const getCharacters = () => {
             "description": ["10% robot, 90% tables and chairs and rocks and pebbles and gems and planks and debris and", "Primary foe of AIEE's Team Scream, as a natural consequence of her stealing everything nailed down or otherwise within AIEE.","Safe is a personal hammerspace... but things don't always come out the same. There is a whole other world of scrap and stolen baubles in there... so you probably shouldn't give her anything for safekeeping."]
         },
         {
+            "characterID": "sc4v2",
+            "displayName": "Flesh Essie",
+            "characterImage": "sluggy.png",
+            "tags": ["She/Her", "Limb Hoarder", "Undeadish"],
+            "description": ["She keeps spare limbs under her turtleneck. Without them, it's just ribs and a spine! Which isn't exactly great at functioning as a proper torso... but it's not like Essie has to worry about like blood and stuff.",`The antennae hairband is just a hairband, but she likes it a lot.`]
+        },
+        {
             "characterID": "ieda",
             "displayName": "Ieda",
             "characterImage": "sluggy.png",
@@ -40,18 +47,11 @@ const getCharacters = () => {
             "description": ["Super duper alive bug. His head fits perfectly into Essies concave face, therefore they are together.", "Has stolen and/or damaged the least amount of property from AIEE, as far as semi-regulars go."]
         },
         {
-            "characterID": "rustling",
-            "displayName": "Sneaky Robotthing",
+            "characterID": "ampersandy",
+            "displayName": "&ampy",
             "characterImage": "sluggy.png",
-            "tags": ["Umm", "Uhh", "Who is this"],
-            "description": ["I don't know anything thing about her aside from the fact they're Red, a Screen that slithers within AIEE, and loves staying out of sight. Probably wouldn't let anyone learn her name either.", "Second, smaller screen that displays a neat little flower, positioned at either of their upper corners.", "Occasionally trades with Essie and company, so long as none of AIEE's crew are nearby."]
-        },
-        {
-            "characterID": "sc4v2",
-            "displayName": "SC-4V (Essie) Two",
-            "characterImage": "sluggy.png",
-            "tags": ["wawa panini", "real tag yummy", "Who the fuck"],
-            "description": ["Who is this"]
+            "tags": ["Any/All", "Real Robot"],
+            "description": ["Ampersandy/Andy/Sandy. Old robot from before the common robot was full of yummerly blue soul juice. Intended to be a superstructure, he mostly just slithers inside AIEE, poking at bits while staying undetected. SC-4V trades valuable things with pup sometimes.","The secondary monitor is generally a flower, but can be swapped to a monocle, eye and other stuff. It's just a monitor..."]
         },
     ]
 }
