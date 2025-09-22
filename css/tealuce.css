@@ -216,7 +216,8 @@ BUTTON TEMPLATES:
 .other-links a img{max-width: 100px;}
 
 /* about ME! */
-.interests div{display: flex;flex-flow: column;}
+.interests div{display: flex;flex-flow: column;padding: 0.5rem;background-color: #ffffff4b;}
+.interests div:nth-child(even){background-color: #ffffff8b;}
 .interests a{width: fit-content;}
 
 /* art page */
