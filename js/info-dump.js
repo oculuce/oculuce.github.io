@@ -47,6 +47,13 @@ const getCharacters = () => {
             "description": ["Super duper alive bug. His head fits perfectly into Essies concave face, therefore they are together.", "Has stolen and/or damaged the least amount of property from AIEE, as far as semi-regulars go."]
         },
         {
+            "characterID": "mook",
+            "displayName": "MOOK",
+            "characterImage": "sluggy.png",
+            "tags": ["She/???", "Groggy Groundskeeper", "Thermautomaton"],
+            "description": ["MURDEROUS OPTIMALLY OPERATING KEEPER. Mostly she wanders the halls and tries to vaguely exude authority at the mannequins that litter the halls. The only break from the routine usually comes from her noticing a few missing items here and there, then noticing rooms stripped of everything nailed down or otherwise, and then seeing SC-4V which usually drives her into a focused rage.","Her pinpoint hatred for Essie generally makes her easier on literally everyone else- even seeing Ieda instead of Essie calms her down a bit, even if Ieda's green sphere head leads to a barely held-back punch every now and again."]
+        },
+        {
             "characterID": "ampersandy",
             "displayName": "&ampy",
             "characterImage": "sluggy.png",
