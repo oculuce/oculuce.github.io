@@ -91,7 +91,7 @@ img{-ms-interpolation-mode:nearest-neighbor;image-rendering:-webkit-optimize-con
 
 /* button things yes */
 nav a, .header-portrait, .buttonifier a,
-.art-grid > div p a, .buttonifier button, .button-texture
+.art-grid > div p a, .buttonifier button, .button-texture, .character-icon
 {padding: 0.45rem;margin: 0.25rem 0;background-color: #000;color: #fff;
     border:3px solid;cursor: pointer;
 border-color: var(--light-green-margin) var(--dark-green-margin) var(--dark-green-margin) var(--light-green-margin);}
@@ -254,6 +254,7 @@ margin-bottom: 1rem;display: flex;flex-flow: column;}
 .character-tags{display: flex; gap: 2ch;}
 .character-tags div{background-color: var(--navy);color: #fff;border:#00000000 10px solid;border-radius:3px}
 
+.character-icon{cursor: default;}
 /* querythings */
 /* ----------- */
 
