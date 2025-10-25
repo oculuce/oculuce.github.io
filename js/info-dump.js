@@ -110,7 +110,7 @@ const getCharacters = () => {
             "description": ["Used to be bones, then Rosie found her bones and now she can do her job easier... whatever she does around here."]
         },
         {
-            "characterID": "mook2",
+            "characterID": "rosie",
             "displayName": "Rosie",
             "characterImage": "icons/rosie.png",
             "tags": ["???/???", "Strange Shut-in", "Tar"],
