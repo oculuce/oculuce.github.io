@@ -9,6 +9,18 @@ let characterName = document.querySelector(".character-name")
 let characterTags = document.querySelector(".character-tags")
 let characterDescription = document.querySelector(".character-description")
 
+let characterGallery = document.querySelector(".character-gallery")
+let galleryImage = document.querySelector(".gallery-image")
+let nextImageButton = document.querySelector("#next")
+let prevImageButton = document.querySelector("#prev")
+let imageCount = document.querySelector("#image-count")
+
+let imageArrayCurrent = 0
+let imageArrayMax = 0
+
+let currentCharacter
+
+
 const getCharacters = () => {
     return [
         {
@@ -30,7 +42,8 @@ const getCharacters = () => {
             "displayName": "SC-4V",
             "characterImage": "icons/sc-4v.png",
             "tags": ["She/Her", "Debris Hoarder", "Droid", "also named Essie!"],
-            "description": ["10% robot, 90% tables and chairs and rocks and pebbles and gems and planks and debris and", "Primary foe of AIEE's Team Scream, as a natural consequence of her stealing everything nailed down or otherwise within AIEE.", "Safe is a personal hammerspace... but things don't always come out the same. There is a whole other world of scrap and stolen baubles in there... so you probably shouldn't give her anything for safekeeping.", "👓: Essie used to be a grey ant with a cannon for an abdomen! As she got greener and more metal, the core of 'fire random garbage at foes' stuck around."]
+            "description": ["10% robot, 90% tables and chairs and rocks and pebbles and gems and planks and debris and", "Primary foe of AIEE's Team Scream, as a natural consequence of her stealing everything nailed down or otherwise within AIEE.", "Safe is a personal hammerspace... but things don't always come out the same. There is a whole other world of scrap and stolen baubles in there... so you probably shouldn't give her anything for safekeeping.", "👓: Essie used to be a grey ant with a cannon for an abdomen! As she got greener and more metal, the core of 'fire random garbage at foes' stuck around."],
+            "images": ["essie-poster.png", "art/may2025/essie-reference-REAL.png", "art/mar2025/essie-doodles.png"]
         },
         {
             "characterID": "ieda",
@@ -65,7 +78,8 @@ const getCharacters = () => {
             "displayName": "MOOK",
             "characterImage": "icons/mook.png",
             "tags": ["She/???", "Groggy Groundskeeper", "Thermautomaton"],
-            "description": ["MURDEROUS OPTIMALLY OPERATING KEEPER. Mostly she wanders AIEE and tries to vaguely exude authority at the mannequins that litter the halls. The only break from the routine usually comes from her noticing a few missing items here and there, then noticing rooms stripped of everything nailed down or otherwise, and then seeing SC-4V which usually drives her into a focused rage.", "Her pinpoint hatred for Essie generally calms her down with literally everyone else- even seeing Ieda instead of Essie calms her down a bit, even if MOOK still has to kick her and her plants out every now and then.."]
+            "description": ["MURDEROUS OPTIMALLY OPERATING KEEPER. Mostly she wanders AIEE and tries to vaguely exude authority at the mannequins that litter the halls. The only break from the routine usually comes from her noticing a few missing items here and there, then noticing rooms stripped of everything nailed down or otherwise, and then seeing SC-4V which usually drives her into a focused rage.", "Her pinpoint hatred for Essie generally calms her down with literally everyone else- even seeing Ieda instead of Essie calms her down a bit, even if MOOK still has to kick her and her plants out every now and then.."],
+            "images": ["mook-poster.png"]
         },
         {
             "characterID": "look",
@@ -107,14 +121,16 @@ const getCharacters = () => {
             "displayName": "Essie",
             "characterImage": "icons/essie.gif",
             "tags": ["She/Her", "Limb Hoarder", "Undeadish"],
-            "description": ["She keeps spare limbs under her turtleneck. Without them, it's just ribs and a spine! Which isn't exactly great at functioning as a proper torso... but it's not like Essie has to worry about like blood and stuff.", `The antennae hairband is just a hairband, but she likes it a lot.`, "👓: Take essie, replace metal with meat, but keep the storage space and spare limbs."]
+            "description": ["She keeps spare limbs under her turtleneck. Without them, it's just ribs and a spine! Which isn't exactly great at functioning as a proper torso... but it's not like Essie has to worry about like blood and stuff.", `The antennae hairband is just a hairband, but she likes it a lot.`, "👓: Take essie, replace metal with meat, but keep the storage space and spare limbs."],
+            "images":["art/oct2025/essie-walk.png","art/sept2025/essieda.png","art/aug2025/assortedEssie.png"]
         },
         {
             "characterID": "ieda2",
             "displayName": "Ieda (Metaln't)",
             "characterImage": "icons/ieda2.png",
             "tags": ["She/They", "Skin & Bark", "Undeadish"],
-            "description": ["It's roots and bark instead of organs. I don't think this humanswap world is very human anymore.", "She doesn't have to worry about getting food for Avo as much, though she does have to wrangle her much more."]
+            "description": ["It's roots and bark instead of organs. I don't think this humanswap world is very human anymore.", "She doesn't have to worry about getting food for Avo as much, though she does have to wrangle her much more."],
+            "images":["art/sept2025/essieda.png"]
         },
         {
             "characterID": "avo2",
@@ -149,14 +165,16 @@ const getCharacters = () => {
             "displayName": "Lonna",
             "characterImage": "icons/lonna.png",
             "tags": ["???/???", "Lanky Mechanic", "Tar"],
-            "description": ["Has the easiest time out of everyone replacing lightbulbs in lampposts."]
+            "description": ["Has the easiest time out of everyone replacing lightbulbs in lampposts."],
+            "images":["art/oct2025/look-walk.png"]
         },
         {
             "characterID": "fernie",
             "displayName": "Fernie",
             "characterImage": "icons/fernie.png",
             "tags": ["blub blub"],
-            "description": ["fire glubby, big eye, tries to keep a non-violent approach to things but being made of fire and shooting fire out of metal rings and tubes makes the other approach easy. pfpfpbfb"]
+            "description": ["fire glubby, big eye, tries to keep a non-violent approach to things but being made of fire and shooting fire out of metal rings and tubes makes the other approach easy. pfpfpbfb"],
+            "images":["art/oct2025/fernie-feast.png","art/oct2025/fernie-misc.png"]
         },
         {
             "characterID": "flurrie",
@@ -191,6 +209,7 @@ const getCharacters = () => {
 }
 
 const showDescription = (character) => {
+    currentCharacter = character
     characterName.innerHTML = character.displayName
     characterTags.innerHTML = null
     character.tags.forEach((tag) => {
@@ -201,11 +220,51 @@ const showDescription = (character) => {
         characterDescription.insertAdjacentHTML('beforeend', `<p>${text}</p>`)
     })
     characterIcon.src = `../images/${character.characterImage}`
+    if (character.images) {
+        imageArrayMax = character.images.length - 1;
+        imageArrayCurrent = 0;
+
+        galleryImage.src = `../images/${character.images[0]}`;
+        imageCount.innerHTML = `1/${imageArrayMax + 1}`
+        characterGallery.classList.remove('show-none');
+    }
+    else { characterGallery.classList.add('show-none'); }
 
     characterSelect.classList.add('show-none')
     characterInfo.classList.add('show-flex')
-
 }
+
+/* consider fusing these maybe? or don't */
+const nextImage = () => {
+    if (imageArrayCurrent != imageArrayMax) {
+        imageArrayCurrent++
+    } else { imageArrayCurrent = 0 }
+    imageCount.innerHTML = `${imageArrayCurrent + 1}/${imageArrayMax + 1}`
+    galleryImage.src = `../images/${currentCharacter.images[imageArrayCurrent]}`;
+}
+const prevImage = () => {
+    if (imageArrayCurrent != 0) {
+        imageArrayCurrent--
+    } else { imageArrayCurrent = imageArrayMax }
+    imageCount.innerHTML = `${imageArrayCurrent + 1}/${imageArrayMax + 1}`
+    galleryImage.src = `../images/${currentCharacter.images[imageArrayCurrent]}`;
+}
+const firstImage = () => {
+    imageArrayCurrent = 0
+    imageCount.innerHTML = `${imageArrayCurrent + 1}/${imageArrayMax + 1}`
+    galleryImage.src = `../images/${currentCharacter.images[imageArrayCurrent]}`;
+}
+
+nextImageButton.addEventListener("click", () => {
+    nextImage()
+})
+prevImageButton.addEventListener("click", () => {
+    prevImage()
+})
+imageCount.addEventListener("click", () => {
+    firstImage()
+})
+
 const hideDescription = () => {
     characterSelect.classList.remove('show-none')
     characterInfo.classList.remove('show-flex')
@@ -218,7 +277,7 @@ const renderCharacterButtons = () => {
     let characterList = getCharacters()
     characterList.forEach((character) => {
         /* let characterButton =  */
-        characterSelect.insertAdjacentHTML('beforeend', `<div id="${character.characterID}" class="character-tag button-texture"><img src="../images/${character.characterImage}">${character.displayName}</div>`)
+        characterSelect.insertAdjacentHTML('beforeend', `<div id="${character.characterID}" class="character-button button-texture"><img src="../images/${character.characterImage}">${character.displayName}</div>`)
         document.querySelector(`#${character.characterID}`).addEventListener("click", () => {
             showDescription(character)
         })
@@ -226,3 +285,25 @@ const renderCharacterButtons = () => {
 }
 
 renderCharacterButtons()
+
+/* gutted version of image-display.js... this is fine for now but like you know variable name blending.*/
+
+let displayView = document.querySelector('.image-display')
+
+let fullViewCloseButton = document.querySelector('.full-view-close-button')
+let formatButton = document.querySelector('.format-button')
+let displayContainer = document.querySelector('.display-container')
+
+let displayImage = document.querySelector('.display-image')
+
+galleryImage.addEventListener("click", () => {
+    displayImage.src = galleryImage.src
+    displayView.classList.add('show-block')
+})
+
+fullViewCloseButton.addEventListener("click", () => {
+    displayView.classList.remove('show-block')
+})
+formatButton.addEventListener("click", () => {
+    displayContainer.classList.toggle('full-image-view')
+})

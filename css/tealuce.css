@@ -241,20 +241,24 @@ margin-bottom: 1rem;display: flex;flex-flow: column;}
 /* character page */
 .character-select{display: flex;gap: 1rem;justify-content: space-between;flex-flow: wrap;}
 .character-select>div{flex-grow: 1;}
-.character-tag{display: flex;flex-flow: row;justify-content: center;align-items: center;gap: 1ch;user-select: none;}
-.character-tag img{width: 64px;}
+.character-button{display: flex;flex-flow: row ;justify-content: center;align-items: center;gap: 1ch;user-select: none;}
+.character-button img{width: 64px;}
 
-.character-info{display: none;flex-flow: column;}
+.character-info{display: none;flex-flow: column ;}
 
 .character-info>div:first-child,.character-info>div:first-child>div{display: flex;flex-flow: row;justify-content: space-between;align-items: center;}
 .character-info>div:first-child>div{gap: 1ch;}
-.character-info>div:first-child>div>div:first-child{width: 64px;}
+/* .character-info>div:first-child>div>div:first-child{width: 80px;} I did it like this because going down roots is fun. It sucks bad though*/
 .close-button{width: 50px;}
 
-.character-tags{display: flex; gap: 2ch;}
-.character-tags div{background-color: var(--navy);color: #fff;border:#00000000 10px solid;border-radius:3px}
+.character-tags{display: flex; flex-flow: wrap; gap: 1rem;margin: 1rem 0 ;}
+.character-tags div{background-color: var(--navy);color: #fff;border:#00000000 10px solid;border-radius:3px;flex-grow: 1;}
+.character-tags div:last-child{flex-grow: 1000;} /* need to allow da other tags to flegrow. */
 
-.character-icon{cursor: default;}
+.character-icon{cursor: default;width: 80px;}
+.character-body{display: flex;gap: 1rem;flex-flow: column;} /* grid is good here but messes up layout if no image. */
+.gallery-select{display: flex;justify-content: space-between;}
+.gallery-select .button-texture{min-width: 2ch;text-align: center;user-select: none;}
 /* querythings */
 /* ----------- */
 
@@ -264,6 +268,8 @@ margin-bottom: 1rem;display: flex;flex-flow: column;}
   .one-one > *:last-child{flex-grow: 3;}
   .art-grid{columns: 2;}
   .image-display button{position: relative;}
+  .character-body{flex-flow: row;}
+  .gallery-image{width: 250px;}
 }
 @media screen and (min-width:830px){
   header nav ul{gap: 1rem;flex-flow: wrap row;}
