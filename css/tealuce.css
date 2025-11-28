@@ -244,7 +244,7 @@ margin-bottom: 1rem;display: flex;flex-flow: column;}
 .character-button{display: flex;flex-flow: row ;justify-content: center;align-items: center;gap: 1ch;user-select: none;}
 .character-button img{width: 64px;}
 
-.character-info{display: none;flex-flow: column ;}
+.character-info{display: none;flex-flow: column;}
 
 .character-info>div:first-child,.character-info>div:first-child>div{display: flex;flex-flow: row;justify-content: space-between;align-items: center;}
 .character-info>div:first-child>div{gap: 1ch;}
