@@ -26,6 +26,27 @@ with first image being the 'full' image and second being the compressed image. I
 const getCharacters = () => {
     return [
         {
+            "characterID": "luce",
+            "displayName": "Luce",
+            "characterImage": "icons/luce.png",
+            "tags": ["Hi","Slime"],
+            "description": ["Some sort of artist..."]
+        },
+        {
+            "characterID": "oculuce",
+            "displayName": "Oculuce",
+            "characterImage": "icons/oculuce.png",
+            "tags": ["Hello","Eyething"],
+            "description": ["Secondary luce..."]
+        },
+        {
+            "characterID": "lucelet",
+            "displayName": "Lucelets",
+            "characterImage": "icons/lucelet.png",
+            "tags": ["Swarm","Literally anything"],
+            "description": ["Nonstandard lucethings."]
+        },
+        {
             "characterID": "souldesc",
             "displayName": "&#9432; Soul",
             "characterImage": "icons/soulshard.png",
