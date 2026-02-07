@@ -29,8 +29,15 @@ const getCharacters = () => {
             "characterID": "luce",
             "displayName": "Luce",
             "characterImage": "icons/luce.png",
-            "tags": ["Hi","Slime"],
+            "tags": ["Hi","Slime, mostly"],
             "description": ["Some sort of artist..."]
+        },
+        {
+            "characterID": "tawfin",
+            "displayName": "Tawfin",
+            "characterImage": "icons/tawfin.png",
+            "tags": ["Ambulatory Warped Fungus"],
+            "description": ["Ohh tawfin.. it is 2:41 AM so I just type things now.","yes tawfin made of warped fungus due to my love of the nether. I Love The Nether And Everything In It","her outfit: warped vine but also prismarine for you see she is from minecraft hell so a material that is so strong in a liquid that she has previously never seen in such large quantities she is enamoured with. gay ass prismarine crop top and bracers and boots.","Tawfin eats food by letting it decompose in a pseudo-stomach. She speaks like Octodad but I like to imagine being able to just say mushroom names perfectly in between blubs and blurbles.","as tawfin is me for I am Luce Tawfin she has as many forms as I play modpacks. if a modpack has origins? she has a mini-conduit that allows her body to function so she must stay hydrated (I play merling I have never not picked merling I see someone talk about how every origins player picks an OP origin and I have no experience with what they mean). Tawfin. Trepidatious Tawfin. This tawfin knows how to make steel. This tawfin can make a bow that shoots many an arrow at a time.","I love Warped Fungus. I playing a custom modpack with, like, minecraft fiction entities and my bravery is increased by 5000 yum-points when I'm in the nether. Even the TACZ mod only gives me like, 20 bravery pointlings (10 pointlings for a point). I love the nether. Ranch hoglins.","I go to bed now"]
         },
         {
             "characterID": "oculuce",
