@@ -23,6 +23,7 @@ const createImageViews = () => {
                 displayImage.src = link.href
                 // add alt text too?
                 displayView.classList.add('show-block')
+                console.log(link.firstChild.alt)
             })
         }
     })
