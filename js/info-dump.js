@@ -102,8 +102,8 @@ const getCharacters = () => {
             "characterID": "acaud",
             "displayName": "Acaud",
             "characterImage": "icons/acaud.png",
-            "tags": ["She/He", "Exanimate Excavator", "Cordysect"],
-            "description": ["Colony of fiendlings that do stuff together.", "Communicates regularly with COOK for culinary cooperation. Could be friends with Avo if they weren't ticked off by Avo gloating about thriving alone (and ignoring Acaud noting that Ieda feeds them a bunch of food...).", "👓: da two side eyes were me going 'hrmgh blush face but blush is eyes'"],
+            "tags": ["They're/Her", "Weird Person", "Fiend Hive"],
+            "description": ["Colony of fiendlings that do stuff together. They have a big anvil on a stick they smack things with, as well as smaller implements for split-off fiendlets to stab their enemies in the back with. They enjoy practicing 'improvised salvaging'", "Communicates regularly with COOK for culinary cooperation. Does not care for Avo gloating about thriving alone (and ignoring Acaud noting that Ieda feeds them a bunch of food...).", "👓: da two side eyes were me going 'hrmgh blush face but blush is eyes'"],
             "images":[["art/june2025/acaud-ref.png","art/june2025/acaud-ref.webp"]]
         },
         {
@@ -148,15 +148,15 @@ const getCharacters = () => {
             "characterID": "ampersandy",
             "displayName": "&ampy",
             "characterImage": "icons/ampersandy.png",
-            "tags": ["Any/All", "Sneaking Screen", "Soulless Robot"],
+            "tags": ["Any/All", "Sneaking Screen", "Robot"],
             "description": ["Ampersandy/Andy/Sandy, though in dire straits will pretend to be 'NOOK', a new employee of AIEE. Old robot from before the common robot was full of yummerly blue soul juice. Intended to manage a building, he mostly just slithers inside AIEE, poking at loose bits and pieces no one will miss while staying undetected. SC-4V trades valuable things with pup sometimes. Her lack of soul makes it easy to hide in plain sight- to anyone xey actively avoid, its nothing but a limp, blank screen.", "The secondary monitor is generally a flower, but can be swapped to a monocle, eye and other stuff. It's just a monitor..."]
         },
         {
             "characterID": "saline",
             "displayName": "S4L-1N3",
             "characterImage": "icons/saline.png",
-            "tags": ["???/???", "Emergency Care", "Soulless Robot"],
-            "description": ["This one is a bit peeved about not being able to have long walks on the beach, even if the surface soulflow wouldn't crystallize onto them as quick as it would a living being.", "👓: super long lasting design- her first form was one of my firstest ocs!! who was me but 'tech', which was just metal with green wire veins. Fire became Fernie, Ice became Flurrie, Normal became eyes became Oculuce, Light and Dark are... somewhere, and... I forgot the 7th, but they're still around."]
+            "tags": ["???/???", "Emergency Care", "Robot"],
+            "description": ["This one is a bit peeved about not being able to have long walks on the beach anymore, since being on the surface would prove fatal nowadays. This one is peeved about a lot of things, really.", "👓: super long lasting design- her first form was one of my firstest ocs!! who was me but 'tech', which was just metal with green wire veins. Fire became Fernie, Ice became Flurrie, Normal became eyes became Oculuce, Light and Dark are... somewhere, and... I forgot the 7th, but they're still around, probably."]
         },
         {
             "characterID": "sc4v2",
@@ -217,23 +217,23 @@ const getCharacters = () => {
             "characterID": "fernie",
             "displayName": "Fernie",
             "characterImage": "icons/fernie.png",
-            "tags": ["blub blub"],
-            "description": ["fire glubby, big eye, tries to keep a non-violent approach to things but being made of fire and shooting fire out of metal rings and tubes makes the other approach easy. pfpfpbfb"],
+            "tags": ["She/Her","Incinerating Investigator"],
+            "description": ["Theoretically does detective work, but mostly just wanders the streets looking for things to follow. She tries to keep a non-violent approach to things... but being made of fire and shooting fire out of metal rings and tubes makes the other approach easy. Her iris is a mouth if it wants to be."],
             "images": [["art/oct2025/fernie-feast.png", "art/oct2025/fernie-feast.webp"], ["art/oct2025/fernie-misc.png", "art/oct2025/fernie-misc.webp"]]
         },
         {
             "characterID": "flurrie",
             "displayName": "Flurrie",
             "characterImage": "icons/flurrie.png",
-            "tags": ["blub blub"],
-            "description": ["Olchys 'Flurrie' Beaumawn. The only person who has ever called her by their full name more than once is Fernie. Some manner of ice sheriff- day lets her be a bullet-immune ghost, dawn and dusk is water bc water yay jafjdsfhaihej and night is Ice where she can just straight up punch people really hard."]
+            "tags": ["They/Her"],
+            "description": ["Olchys 'Flurrie' Beaumawn. The only person who has ever called her by their full name more than once is Fernie. Some manner of ice sheriff- day lets her be a ghost of steam, dawn and dusk is water bc water yay jafjdsfhaihej and night is Ice where she can just straight up punch people really hard."]
         },
         {
             "characterID": "guy",
             "displayName": "Guy",
             "characterImage": "icons/guy.png",
             "tags": ["Prime"],
-            "description": ["whos this asshole.", "👓: It is the MSPA face. strongest oc, drawn on the back of most of my school quizzes when I finished before time was up. the staff shoots a laser that goes up forever and annihilates anything in its path except Guy, which means like 1% of any world Guy is in is just. lasered away. and thats if guy is perfectly still! Legends say Dude is still out there... ready to strike when Guy's guard is down..."],
+            "description": ["whos this asshole.", "👓: It is just the MSPA face, mutated over years of drawing this thing on the back of test sheets. strongest oc. the staff shoots a laser that goes up forever and annihilates anything in its path except Guy, which means like 1% of any world Guy is in is just. lasered away. and thats if guy is perfectly still! Legends say Dude is still out there... ready to strike when Guy's guard is down..."],
             "images":[["guy.png"]]
         },
         {
@@ -241,7 +241,7 @@ const getCharacters = () => {
             "displayName": "Guy Moon",
             "characterImage": "icons/guymoon.png",
             "tags": ["Lime"],
-            "description": ["in da material swap moon Guy is da moon. Vast swarms of cultlets roam the world to achieve the sheer power contained within the staff, but the search has gone on for so long that the many stories of the staff have multiplied endlessly!", "Some say that the staff is within the center of Guy, while others claim it lies somewhere on the planet and was buried by Guy as a treasure! And of course some claim that Guy absorbed all of the staffs power, and even that the staff does not exist, but surely such a staff must exist! How else could the moon glow so bright?", "A lot of people don't care about it at all and just wish the cultlets would stop digging up their plants because one of the stalks arch like a 'magic staff'."],
+            "description": ["in da material swap, Guy is da moon. Vast swarms of cultlets roam the world to achieve the sheer power contained within the staff, but the search has gone on for so long that the many stories of the staff have multiplied endlessly!", "Some say that the staff is within the center of Guy, while others claim it lies somewhere on the planet and was buried by Guy as a treasure! And of course some claim that Guy absorbed all of the staffs power, and even that the staff does not exist, but surely such a staff must exist! How else could the moon glow so bright?", "A lot of people don't care about it at all and just wish the cultlets would stop digging up their plants because one of the stalks arch like 'the Magic Staff'."],
             "images":[["art/oct2025/ocean-shore.png","art/oct2025/ocean-shore.webp"]]
         }
         /* ,
