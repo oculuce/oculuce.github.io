@@ -5,6 +5,8 @@ let formatButton = document.querySelector('.format-button')
 let displayContainer = document.querySelector('.display-container')
 
 let displayImage = document.querySelector('.display-image')
+let displayAltText = document.querySelector('.alt-text-display')
+
 
 let detectLink = document.querySelector('.detectLink')
 let imageLinks = detectLink.querySelectorAll('a')
@@ -21,9 +23,16 @@ const createImageViews = () => {
             link.addEventListener("click",(event)=>{
                 event.preventDefault()
                 displayImage.src = link.href
-                // add alt text too?
                 displayView.classList.add('show-block')
+                // alt text:
                 console.log(link.firstChild.alt)
+                if(link.firstChild.alt != ""){
+                    displayAltText.firstChild.textContent = link.firstChild.alt
+                }else{
+                    displayAltText.firstChild.textContent = "No alt text."
+                }
+
+
             })
         }
     })
