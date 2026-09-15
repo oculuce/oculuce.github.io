@@ -29,29 +29,30 @@ const getCharacters = () => {
             "characterID": "luce",
             "displayName": "Luce",
             "characterImage": "icons/luce.png",
-            "tags": ["Hi","Slime, mostly"],
-            "description": ["Some sort of artist..."]
+            "tags": ["Hi","Tealling"],
+            "description": ["Some sort of artist... you could probably learn more in the <a href='../who-this'>[about]</a> section."],
+            "images": [["art/june2026/lucepride.png","art/june2026/lucepride.webp"]]
         },
         {
             "characterID": "tawfin",
             "displayName": "Tawfin",
             "characterImage": "icons/tawfin.png",
             "tags": ["Ambulatory Warped Fungus"],
-            "description": ["Ohh tawfin.. it is 2:41 AM so I just type things now.","yes tawfin made of warped fungus due to my love of the nether. I Love The Nether And Everything In It","her outfit: warped vine but also prismarine for you see she is from minecraft hell so a material that is so strong in a liquid that she has previously never seen in such large quantities she is enamoured with. gay ass prismarine crop top and bracers and boots.","Tawfin eats food by letting it decompose in a pseudo-stomach. She speaks like Octodad but I like to imagine being able to just say mushroom names perfectly in between blubs and blurbles.","as tawfin is me for I am Luce Tawfin she has as many forms as I play modpacks. if a modpack has origins? she has a mini-conduit that allows her body to function so she must stay hydrated (I play merling I have never not picked merling I see someone talk about how every origins player picks an OP origin and I have no experience with what they mean). Tawfin. Trepidatious Tawfin. This tawfin knows how to make steel. This tawfin can make a bow that shoots many an arrow at a time.","I love Warped Fungus. I playing a custom modpack with, like, minecraft fiction entities and my bravery is increased by 5000 yum-points when I'm in the nether. Even the TACZ mod only gives me like, 20 bravery pointlings (10 pointlings for a point). I love the nether. Ranch hoglins.","I go to bed now"]
+            "description": ["Tawfin is a warped fungus that gained sapience. She now menaces the world with her funny axe and other devices. Her only vital organ is the eye in her head, and in desperate cases she is able to walk on her face tendrils.","Uses twisting vines in her apparel, as well as wearing prismarine due to her fascination with a material that was seemingly made for an environment that is impossible in Minecraft Hell. Prismarine makes up her crop-top-armour-thing, bracelets, boots, and belt-thing.","She speaks like Octodad, but is able to say mushroom names perfectly between blubs and burbles.","Each time I play Minecraft is a new tawfin, so her exact biology and personality is... worbly. Merling!Tawfin must absorb water, or else the mini-conduit will stop functioning and lock up her prismarine bones. Trepidatious!Tawfin is very skittish, due to being in the modpack Trepidation. This Tawfin is really good at making weapons, that Tawfin went insane looking at funny books... in any case, most Tawfins are relatively chill.","A Tawfin becomes about 1000x braver when in her home dimension, even in the face of Minecraft Horror Mods.","Chef Tawfin has a food truck she drives everywhere. She has a green :MLEHHH: and a snowperson who are trying to avoid other :MLEHHH:s... neither are great at cooking, but they're very helpful for fending off hoards of unruly would-be customers.","A vast group of Tawfins connect worlds to eachother, leading to the creation of 'Tawflings' who are like a Tawfin, but without the experience gained from escaping the Nether by themselves. This group is responsible for Tawfins who come to a world with an explicit purpose, like investigating Minecraft Horror Mods with a big revolver and Ultrakill movement."]
         },
         {
             "characterID": "oculuce",
             "displayName": "Oculuce",
             "characterImage": "icons/oculuce.png",
             "tags": ["Hello","Eyething"],
-            "description": ["Secondary luce..."]
+            "description": ["Eyeball Luce. Formed after I tried to make an obesk signature and got something else."]
         },
         {
             "characterID": "lucelet",
             "displayName": "Lucelets",
             "characterImage": "icons/lucelet.png",
             "tags": ["Swarm","Literally anything"],
-            "description": ["Nonstandard lucethings."]
+            "description": ["Assorted lucelings that come in a variety of hues. Don't worry about them running underfoot, they're good at dodging."]
         },
         {
             "characterID": "souldesc",
@@ -65,31 +66,31 @@ const getCharacters = () => {
             "displayName": "&#9432; Automata",
             "characterImage": "icons/robot.png",
             "tags": ["Soulful Machinery"],
-            "description": ["Not exactly real robots, most robots underground are mostly full of soul slop that lets things like stray arms shuffle around and attach more things to themselves... which is why most people either keep spare parts in proper storage in the event of temporary unwanted sentience, or at the very least disassembling anything that could get up and walk.", "There are a few robots out there that aren't full of Soul, which lets them get away with things others might not be able to..."]
+            "description": ["Not exactly real robots, most robots underground are mostly full of soul slop that lets things like stray arms shuffle around and attach more things to themselves... which is why most people either keep spare parts in proper storage in the event of temporary unwanted sentience, or at the very least disassembling anything that could get up and walk.", "There are a few robots out there that aren't full of Soul, which gives them a certain lack of presence useful for going unnoticed, even in the open."]
         },
         {
             "characterID": "sc4v",
             "displayName": "SC-4V",
             "characterImage": "icons/sc-4v.png",
             "tags": ["She/Her", "Debris Hoarder", "Droid", "also named Essie!"],
-            "description": ["10% robot, 90% tables and chairs and rocks and pebbles and gems and planks and debris and", "Primary foe of AIEE's Team Scream, as a natural consequence of her stealing everything nailed down or otherwise within AIEE.", "Safe is a personal hammerspace... but things don't always come out the same. There is a whole other world of scrap and stolen baubles in there... so you probably shouldn't give her anything for safekeeping.", "👓: Essie used to be a grey ant with a cannon for an abdomen! As she got greener and more metal, the core of 'fire random garbage at foes' stuck around. The main thought process early on was 'ourgh lisa the timeless elton broll hit people with chair and throw bottle and bottle caps I like that'."],
-            "images": [["essie-poster.png", "essie-poster.png"], ["art/may2025/essie-reference-REAL.png", "art/may2025/essie-reference-REAL.webp"], ["art/mar2025/essie-doodles.png", "art/mar2025/essie-doodles.webp"],["art/nov2025/essie-ocean.png","art/nov2025/essie-ocean.webp"]]
+            "description": ["<em>missing furniture, broken doors, and the distinct feeling that someone knows that you're tresspassing</em>","20% droid, 80% tables and chairs and rocks and pebbles and gems and planks and debris and","A fan of picking things off of the ground and throwing them at other things.","Primary foe of AIEE's Team Scream, as a natural consequence of her stealing everything nailed down or otherwise within AIEE.", "The chest-safe is a personal hammerspace... but things don't always come out the same. If you put your ear to her chest, you might be able to hear skittering and squeaking... so you probably shouldn't give her anything edible for safekeeping.","👓: Essie used to be a grey ant with a cannon for an abdomen! As she got greener and more metal, the core of 'fire random garbage at foes' stuck around. The main thought process early on was 'ourgh lisa the timeless elton broll hit people with chair and throw bottle and bottle caps I like that'."],
+            "images": [["essie-poster.png", "essie-poster.png"],["art/june2026/essieRef2026.png", "art/june2026/essieRef2026.webp"],["art/may2026/essie-door.png", "art/may2026/essie-door.webp"],["art/may2025/essie-reference-REAL.png", "art/may2025/essie-reference-REAL.webp"], ["art/mar2025/essie-doodles.png", "art/mar2025/essie-doodles.webp"],["art/nov2025/essie-ocean.png","art/nov2025/essie-ocean.webp"]]
         },
         {
             "characterID": "ieda",
             "displayName": "Ieda",
             "characterImage": "icons/ieda.png",
             "tags": ["She/They", "Botanical Menace", "Droid"],
-            "description": ["Does it count as gardening if you mostly just plant seeds that grow horrifically fast in buildings for fun? Ieda is full of tubes that transport funny liquids that do things when combined together. This mostly involves speed-growing plants as well as making explosives that have a very short time between creation and detonation.", "Almost constantly with Avo, as her presence has substantially reduced incidents of seeds growing inside Ieda. She used the concept of 'Found Family' a bit literally with Essie after they saw her for the first time and noted that they both have green sphere heads. Essie is fine with this.", "👓: Essies big circle indent made me want to make a triangle and square indent. 80-Z0 is rotting in a ditch, but Ieda is thriving! I also wanted to make a solid-liquid parallel which is why Ieda makes explosives from Juice. She had a design where her limbs were bark but then I just made her plant stuff with her tube arms."],
-            "images":[["art/june2025/ieda-ref.png","art/june2025/ieda-ref.webp"]]
+            "description": ["Does it count as gardening if you mostly just plant seeds that grow horrifically fast in buildings for fun? Yes. Ieda is full of tubes that transport funny liquids that do things when combined together. This mostly involves speed-growing plants as well as making explosives that have a very short time between creation and detonation.", "Carries Avo around, because Avo is awesome. Avo's presence has substantially reduced incidents of seeds growing inside Ieda. She used the concept of 'Found Family' a bit literally with Essie after they saw her for the first time and saw that they both have green sphere heads. Essie is fine with this.", "👓: Essies big circle indent made me want to make a triangle and square indent. 80-Z0 is rotting in a ditch, but Ieda is thriving! I also wanted to make a solid-liquid parallel which is why Ieda makes explosives from Juice. She had a design where her limbs were bark but then I just made her plant stuff with her tube arms."],
+            "images":[["art/aug2026/iedalets.png","art/aug2026/iedalets.png"],["art/june2026/iedaRef2026.png","art/june2026/iedaRef2026.png"],["art/june2025/ieda-ref.png","art/june2025/ieda-ref.webp"]]
         },
         {
             "characterID": "avo",
-            "displayName": "Avo",
+            "displayName": "Avo",   
             "characterImage": "icons/avo.png",
-            "tags": ["Mirror Pronouns", "Weird Thing", "Greater Fiendling"],
-            "description": ["Big ol' fiendling. Tastes like meat broth, but mostly like severe burns.", "Almost constantly with Ieda- her presence has substantially reduced the amount of biomatter Ieda has for her plants.", "Feels extremely superior to Acaud due to being a lone fiendling and thriving 'all by herself'. Ieda's contribution to Avo's survival has been repeatedly pointed out by Acaud."],
-            "images":[["art/aug2025/avoLaze.png","art/aug2025/avoLaze.webp"],["art/june2025/avo-ref.png","art/june2025/avo-ref.webp"]]
+            "tags": ["Mirror Pronouns", "Weird Thing", "Fiend"],
+            "description": ["Big ol' fiendling. Tastes like meat broth and severe burns.", "Almost constantly with Ieda, as her presence makes hunting wildlife much less perilous. Avo still goes off on her own, though.", "Feels extremely superior to Acaud due to being a lone fiendling and thriving 'all by themself'. Ieda's contribution to Avo's survival has been repeatedly pointed out by Acaud.","Trusts SC-4V, with Avo grabbing a spare knife or two from her every now and then."],
+            "images":[["art/jan2026/avo-doodles.png","art/jan2026/avo-doodles.webp"],["art/aug2025/avoLaze.png","art/aug2025/avoLaze.webp"],["art/june2025/avo-ref.png","art/june2025/avo-ref.webp"]]
         },
         {
             "characterID": "zylvezter",
@@ -103,15 +104,15 @@ const getCharacters = () => {
             "displayName": "Acaud",
             "characterImage": "icons/acaud.png",
             "tags": ["They're/Her", "Weird Person", "Fiend Hive"],
-            "description": ["Colony of fiendlings that do stuff together. They have a big anvil on a stick they smack things with, as well as smaller implements for split-off fiendlets to stab their enemies in the back with. They enjoy practicing 'improvised salvaging'", "Communicates regularly with COOK for culinary cooperation. Does not care for Avo gloating about thriving alone (and ignoring Acaud noting that Ieda feeds them a bunch of food...).", "👓: da two side eyes were me going 'hrmgh blush face but blush is eyes'"],
-            "images":[["art/june2025/acaud-ref.png","art/june2025/acaud-ref.webp"]]
+            "description": ["Colony of fiendlings that do stuff together. They have a big anvil on a stick they smack things with, as well as smaller implements for split-off fiendlets to stab their enemies in the back with. They enjoy practicing 'improvised salvaging'", "Communicates regularly with COOK for culinary cooperation. Does not care for Avo gloating about thriving alone (and ignoring Acaud noting that Ieda feeds them a bunch of food...). Likes to bring MOOK on tours whenever MOOK has time to go on vacation up above.","Has a sort of... rivalry with a one of the City Crystals. A sharp claw punctures slime easily, and a heavy anvil shatters crystal easily. Certainly not as hateful (if at all) as what SC-4V and MOOK have between eachother, though.","👓: da two side eyes were me going 'hrmgh blush face but blush is eyes'"],
+            "images":[["art/apr2026/aboveground-bozos.png","art/apr2026/aboveground-bozos.webp"],["art/feb2026/mook-vacation-testing.png","art/feb2026/mook-vacation-testing.webp"],["art/june2025/acaud-ref.png","art/june2025/acaud-ref.webp"]]
         },
         {
             "characterID": "aiee",
             "displayName": "AIEE",
             "characterImage": "icons/aiee.png",
             "tags": ["None", "Sentient Superstructure"],
-            "description": ["Automatically Infinitely Expanding Edifice. Up and coming new technology that will eliminate all logistical issues that would normally come with buildings that sprout randomly out of nowhere! ...is how the pitch went, at least. There isn't much direction nowadays, so you'll mostly find conveyors and machines setup to just... make things, as well as a vast swarm of manne-gerial and manne-chanical staff that keep the place running.","Please don't damage the building, as while you may find wall dents and the like to heal over time, carelessness will result in inexplicable occurences such as missing pens, the reshuffling of rooms to interrupt your pathways, and in the case of a certain group of scrapheads, the expedient ejection of your body out of the building."],
+            "description": ["Automatically Infinitely Expanding Edifice. A large structure going from the cavern floor and the cavern ceiling! You might even be able to breach the surface at the top... not that you should. You'll mostly find a vast swarm of manne-gerial and manne-chanical staff that fill the various offices and rooms in AIEE.","The lowest zones have welding-mask-wearing test-mannAIEEquinns that handle the molten rivers. The middle-offices have mannAIEEquins that do office work on computers that may or may not actually work. The higher ups used to handle expanding AIEE... but ever since the surface was breached, they're only seen rarely flying and crawling up above.","Please don't damage the building, as while you may find wall dents and the like to heal over time, carelessness will result in inexplicable occurences such as missing pens, the reshuffling of rooms to interrupt your pathways, or the expedient ejection of your body out of the building."],
             "images": [["art/aug2025/terraneanMap.png","art/aug2025/terraneanMap.webp"]]
         },
         {
@@ -119,23 +120,23 @@ const getCharacters = () => {
             "displayName": "MOOK",
             "characterImage": "icons/mook.png",
             "tags": ["She/???", "Groggy Groundskeeper", "Thermautomaton"],
-            "description": ["MURDEROUS OPTIMALLY OPERATING KEEPER. Mostly she wanders AIEE and tries to vaguely exude authority at the mannequins that litter the halls. The only break from the routine usually comes from her noticing a few missing items here and there, then noticing rooms stripped of everything nailed down or otherwise, and then seeing SC-4V which usually drives her into a focused rage.", "Her pinpoint hatred for Essie generally calms her down with literally everyone else- even seeing Ieda instead of Essie calms her down a bit, even if MOOK still has to kick her and her plants out every now and then.."],
-            "images": [["mook-poster.png"]]
+            "description": ["MIDDLING OPTIMALLY OPERATING KEEPER. She mostly wanders AIEE and generally acts as passive encouragement to the fanAIEEtical mannAIEEquins that litter the halls. The only break from the routine usually comes from her noticing a few missing items here and there, then noticing rooms stripped of everything nailed down or otherwise, and then seeing SC-4V running away from her.","MOOK rarely is given vacation time, allowing her to enter a cannon at the top of AIEE to be shot at the Crystal City. She is not a very polite tourist.", "Her focused hatred for Essie generally makes her less murderous with literally everyone else- even Ieda isnt treated as harshly, even if MOOK still has to throw Ieda and her plants out every now and then.","Tie-friends with COOK. Respects the warnings LOOK gives for SC-4V."],
+            "images": [["mook-poster.png"],["art/apr2026/aboveground-bozos.png","art/apr2026/aboveground-bozos.webp"],["art/feb2026/mook-vacation-testing.png","art/feb2026/mook-vacation-testing.webp"]]
         },
         {
             "characterID": "look",
             "displayName": "LOOK",
             "characterImage": "icons/look.png",
             "tags": ["She/It", "Staring Scope", "Droid"],
-            "description": ["LOOMING OCULAR OBSERVING KEEPER. Big ol' slithering telescope who keeps an eye of the going-ons around AIEE."],
-            "images":[["art/oct2025/flesh-look.png","art/oct2025/flesh-look.webp"]]
+            "description": ["LOOMING OCULAR OBSERVING KEEPER. Big ol' slithering telescope who keeps an eye of the going-ons around AIEE. Occasionally warns its coworkers about approaching oddities.","Plays Go-Fish with Avo. Appreciates Ieda's planthouse from a distance."],
+            "images":[["art/june2026/lookRef2026.png","art/june2026/lookRef2026.webp"],["art/oct2025/flesh-look.png","art/oct2025/flesh-look.webp"]]
         },
         {
             "characterID": "cook",
             "displayName": "COOK",
             "characterImage": "icons/cook.png",
             "tags": ["Her/She", "Staring Scope", "Thermautomaton"],
-            "description": ["CULINARILY OPTIMAL ORDER KEEPER. She cooks food. She cannot eat food. Every known copy of Cooking Wawa was destroyed before she was made. MOOK and the fake fakey fake mannequin workers don't eat either. This vexes COOK, but she takes it in stride and just tries anything that <em>feels right</em>.", "Acaud pops into AIEE every now and then, and the combination of free... delicacies and iron stomachs makes for pleasant get-togethers between the two."]
+            "description": ["CULINARILY OPTIMAL ORDER KEEPER. She cooks food. She cannot eat food. Every known copy of Cooking Wawa was destroyed before she was made. MOOK and the mannAIEEquins workers can't really taste either. This vexes COOK, but she takes it in stride and just tries anything that <em>feels right</em>.", "Acaud pops into AIEE every now and then, and the combination of free... delicacies and an iron stomach(es) makes for pleasant get-togethers between the two.","While not as vicious as MOOK, COOK is still more than capable of dealing with SC-4V, generally leaving SC-4V with one option: apologizing for whatever thing she stole or broke."]
         },
         {
             "characterID": "hook",
@@ -187,14 +188,14 @@ const getCharacters = () => {
             "displayName": "&#9432; Tar",
             "characterImage": "icons/tar.png",
             "tags": ["Cadaver Ambulators"],
-            "description": ["Inky slime creatures that claim bodies for their own use. The process of rooting into the bones is somewhat intensive so constant bodyswapping is rather difficult to do."]
+            "description": ["Inky slime creatures that claim bodies for their own use. The process of rooting into the bones is somewhat intensive, making 'bodyswapping' very arduous."]
         },
         {
             "characterID": "mook2",
             "displayName": "Henry",
             "characterImage": "icons/henry.png",
             "tags": ["She/???", "Groundskeeper", "Skeleton"],
-            "description": ["Used to be bones, then Rosie found her bones and now she can do her job easier... whatever she does around here."],
+            "description": ["Used to be bones, then Rosie found her bones so now she can do her job easier... whatever she does around here. Often seen driving cars or moving bags."],
             "images":[["art/oct2025/roziehenry-crop.png","art/oct2025/roziehenry-crop.webp"]]
         },
         {
@@ -210,8 +211,8 @@ const getCharacters = () => {
             "displayName": "Lonna",
             "characterImage": "icons/lonna.png",
             "tags": ["???/???", "Lanky Mechanic", "Tar"],
-            "description": ["Has the easiest time out of everyone replacing lightbulbs in lampposts."],
-            "images": [["art/oct2025/look-walk.png", "art/oct2025/look-walk.webp"],["art/oct2025/flesh-look.png","art/oct2025/flesh-look.webp"]]
+            "description": ["Normal person. Has the easiest time out of everyone replacing lightbulbs in lampposts, which is good since that's what she does.","As a tar-thing, Lonna has chosen a tall skeleton(found in a ditch somewhere), letting her reach high lights. Her body is wrapped with bandages to prevent tar dripping everywhere, though she prefers an exposed face in case she needs to eject from her spine in case of emergency. The skeleton is named Larry. They like to shout rude things at people. They let Lonna use them as structural support because they were bored of laying in a pit for years.","Her special ability is practicing unfastening bulbs and bolts on any repair-haters that accost her."],
+            "images": [["art/june2026/lonnaRef2026.png", "art/june2026/lonnaRef2026.webp"],["art/oct2025/look-walk.png", "art/oct2025/look-walk.webp"],["art/oct2025/flesh-look.png","art/oct2025/flesh-look.webp"]]
         },
         {
             "characterID": "fernie",
@@ -219,7 +220,7 @@ const getCharacters = () => {
             "characterImage": "icons/fernie.png",
             "tags": ["She/Her","Incinerating Investigator"],
             "description": ["Theoretically does detective work, but mostly just wanders the streets looking for things to follow. She tries to keep a non-violent approach to things... but being made of fire and shooting fire out of metal rings and tubes makes the other approach easy. Her iris is a mouth if it wants to be."],
-            "images": [["art/oct2025/fernie-feast.png", "art/oct2025/fernie-feast.webp"], ["art/oct2025/fernie-misc.png", "art/oct2025/fernie-misc.webp"]]
+            "images": [["art/apr2026/aboveground-bozos.png", "art/apr2026/aboveground-bozos.webp"],["art/oct2025/fernie-feast.png", "art/oct2025/fernie-feast.webp"], ["art/oct2025/fernie-misc.png", "art/oct2025/fernie-misc.webp"]]
         },
         {
             "characterID": "flurrie",
@@ -241,7 +242,7 @@ const getCharacters = () => {
             "displayName": "Guy Moon",
             "characterImage": "icons/guymoon.png",
             "tags": ["Lime"],
-            "description": ["in da material swap, Guy is da moon. Vast swarms of cultlets roam the world to achieve the sheer power contained within the staff, but the search has gone on for so long that the many stories of the staff have multiplied endlessly!", "Some say that the staff is within the center of Guy, while others claim it lies somewhere on the planet and was buried by Guy as a treasure! And of course some claim that Guy absorbed all of the staffs power, and even that the staff does not exist, but surely such a staff must exist! How else could the moon glow so bright?", "A lot of people don't care about it at all and just wish the cultlets would stop digging up their plants because one of the stalks arch like 'the Magic Staff'."],
+            "description": ["Guy is the moon. Cultlets and lunatics roam the world to achieve the sheer power contained within the staff of Guy, but the search has gone on for so long that the many stories of the staff have multiplied endlessly!", "Some say that the staff is within the center of Guy, while others claim it lies somewhere on the planet and was buried by Guy as a treasure before ascending! And of course some claim that Guy absorbed all of the staffs power, or even that the staff does not exist, but surely such a staff must exist! How else could the moon glow so bright?", "A lot of people don't care about it at all and just wish people would stop digging up their plants because one of the stalks are sort of shaped like a staff, or stealing lightbulbs for 'the potent lunar energies within'."],
             "images":[["art/oct2025/ocean-shore.png","art/oct2025/ocean-shore.webp"]]
         }
         /* ,
