@@ -25,7 +25,7 @@ const createImageViews = () => {
                 displayImage.src = link.href
                 displayView.classList.add('show-block')
                 // alt text:
-                console.log(link.firstChild.alt)
+                // console.log(link.firstChild.alt)
                 if(link.firstChild.alt != ""){
                     displayAltText.firstChild.textContent = link.firstChild.alt
                 }else{
